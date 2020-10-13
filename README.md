@@ -14,7 +14,8 @@ source path/to/virtual/environment/bin/activate
 # Install requirements if they have changed.
 pip install -r requirements.txt
 
-./build_website.sh
+# cd to working directory
+mkdocs serve
 
 # If you changed dependencies, save them to requirements.
 pip freeze > requirements.txt
