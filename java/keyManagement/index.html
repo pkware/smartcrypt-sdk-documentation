@@ -188,8 +188,8 @@
 
     <span class=nd>@Override</span>
     <span class=kd>public</span> <span class=n>Map</span><span class=o>&lt;</span><span class=n>String</span><span class=p>,</span> <span class=n>String</span><span class=o>&gt;</span> <span class=nf>onLoadData</span><span class=p>()</span> <span class=p>{</span>
-        <span class=k>try</span> <span class=p>{</span>
-            <span class=k>return</span> <span class=n>Files</span><span class=p>.</span><span class=na>list</span><span class=p>(</span><span class=n>Paths</span><span class=p>.</span><span class=na>get</span><span class=p>(</span><span class=n>folder</span><span class=p>)).</span><span class=na>collect</span><span class=p>(</span><span class=n>toMap</span><span class=p>(</span>
+        <span class=k>try</span> <span class=p>(</span><span class=n>Stream</span><span class=o>&lt;</span><span class=n>Path</span><span class=o>&gt;</span> <span class=n>stream</span> <span class=o>=</span> <span class=n>Files</span><span class=p>.</span><span class=na>list</span><span class=p>(</span><span class=n>Paths</span><span class=p>.</span><span class=na>get</span><span class=p>(</span><span class=n>folder</span><span class=p>)))</span> <span class=p>{</span>
+            <span class=k>return</span> <span class=n>stream</span><span class=p>.</span><span class=na>collect</span><span class=p>(</span><span class=n>toMap</span><span class=p>(</span>
                     <span class=n>path</span> <span class=o>-&gt;</span> <span class=n>path</span><span class=p>.</span><span class=na>getFileName</span><span class=p>().</span><span class=na>toString</span><span class=p>(),</span>                      <span class=c1>// Key</span>
                     <span class=n>fileName</span> <span class=o>-&gt;</span> <span class=p>{</span>                                               <span class=c1>// Value</span>
                         <span class=k>try</span> <span class=p>{</span>
@@ -220,7 +220,9 @@
 
 <span class=hll><span class=c1>// Note: This class is not part of the SDK</span>
 </span><span class=hll><span class=kd>class</span> <span class=nc>FilePersistenceCallback</span> <span class=p>:</span> <span class=n>PersistenceCallback</span> <span class=p>{</span>
-</span>    <span class=n>override</span> <span class=n>fun</span> <span class=nf>onSaveData</span><span class=p>(</span><span class=n>toSave</span><span class=p>:</span> <span class=n>Map</span><span class=o>&lt;</span><span class=n>String</span><span class=p>,</span> <span class=n>String</span><span class=o>&gt;</span><span class=p>,</span> <span class=n>toDelete</span><span class=p>:</span> <span class=n>Set</span><span class=o>&lt;</span><span class=n>String</span><span class=o>&gt;</span><span class=p>):</span> <span class=n>Boolean</span> <span class=o>=</span> <span class=k>try</span> <span class=p>{</span>
+</span>    <span class=kd>private</span> <span class=n>val</span> <span class=n>folder</span> <span class=o>=</span> <span class=s>&quot;serializedSmartcryptData&quot;</span>
+
+    <span class=n>override</span> <span class=n>fun</span> <span class=nf>onSaveData</span><span class=p>(</span><span class=n>toSave</span><span class=p>:</span> <span class=n>Map</span><span class=o>&lt;</span><span class=n>String</span><span class=p>,</span> <span class=n>String</span><span class=o>&gt;</span><span class=p>,</span> <span class=n>toDelete</span><span class=p>:</span> <span class=n>Set</span><span class=o>&lt;</span><span class=n>String</span><span class=o>&gt;</span><span class=p>):</span> <span class=n>Boolean</span> <span class=o>=</span> <span class=k>try</span> <span class=p>{</span>
         <span class=n>Files</span><span class=p>.</span><span class=na>createDirectory</span><span class=p>(</span><span class=n>Paths</span><span class=p>.</span><span class=na>get</span><span class=p>(</span><span class=n>folder</span><span class=p>))</span>
         <span class=k>for</span> <span class=p>((</span><span class=n>key</span><span class=p>,</span> <span class=n>value</span><span class=p>)</span> <span class=n>in</span> <span class=n>toSave</span><span class=p>)</span> <span class=p>{</span>
             <span class=n>Files</span><span class=p>.</span><span class=na>newBufferedWriter</span><span class=p>(</span><span class=n>Paths</span><span class=p>.</span><span class=na>get</span><span class=p>(</span><span class=n>folder</span><span class=p>,</span> <span class=n>key</span><span class=p>)).</span><span class=na>use</span> <span class=p>{</span> <span class=n>writer</span> <span class=o>-&gt;</span>
@@ -236,17 +238,19 @@
     <span class=p>}</span>
 
     <span class=n>override</span> <span class=n>fun</span> <span class=nf>onLoadData</span><span class=p>():</span> <span class=n>Map</span><span class=o>&lt;</span><span class=n>String</span><span class=p>,</span> <span class=n>String</span><span class=o>&gt;</span> <span class=o>=</span> <span class=k>try</span> <span class=p>{</span>
-        <span class=n>Files</span><span class=p>.</span><span class=na>list</span><span class=p>(</span><span class=n>Paths</span><span class=p>.</span><span class=na>get</span><span class=p>(</span><span class=n>folder</span><span class=p>)).</span><span class=na>collect</span><span class=p>(</span><span class=n>toMap</span><span class=p>(</span>
-            <span class=p>{</span> <span class=n>path</span> <span class=o>-&gt;</span> <span class=n>path</span><span class=p>.</span><span class=na>fileName</span><span class=p>.</span><span class=na>toString</span><span class=p>()</span> <span class=p>},</span>             <span class=c1>// Key</span>
-            <span class=p>{</span> <span class=n>fileName</span> <span class=o>-&gt;</span>                                     <span class=c1>// Value</span>
-                <span class=k>return</span><span class=nd>@toMap</span> <span class=k>try</span> <span class=p>{</span>
-                    <span class=n>String</span><span class=p>(</span><span class=n>Files</span><span class=p>.</span><span class=na>readAllBytes</span><span class=p>(</span><span class=n>fileName</span><span class=p>))</span>
-                <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=n>e</span><span class=p>:</span> <span class=n>IOException</span><span class=p>)</span> <span class=p>{</span>
-                    <span class=n>e</span><span class=p>.</span><span class=na>printStackTrace</span><span class=p>()</span>
-                    <span class=s>&quot;&quot;</span>
+        <span class=n>Files</span><span class=p>.</span><span class=na>list</span><span class=p>(</span><span class=n>Paths</span><span class=p>.</span><span class=na>get</span><span class=p>(</span><span class=n>folder</span><span class=p>)).</span><span class=na>use</span> <span class=p>{</span> <span class=n>stream</span> <span class=o>-&gt;</span>
+            <span class=n>stream</span><span class=p>.</span><span class=na>collect</span><span class=p>(</span><span class=n>toMap</span><span class=p>(</span>
+                <span class=p>{</span> <span class=n>path</span> <span class=o>-&gt;</span> <span class=n>path</span><span class=p>.</span><span class=na>fileName</span><span class=p>.</span><span class=na>toString</span><span class=p>()</span> <span class=p>},</span>             <span class=c1>// Key</span>
+                <span class=p>{</span> <span class=n>fileName</span> <span class=o>-&gt;</span>                                     <span class=c1>// Value</span>
+                    <span class=k>return</span><span class=nd>@toMap</span> <span class=k>try</span> <span class=p>{</span>
+                        <span class=n>String</span><span class=p>(</span><span class=n>Files</span><span class=p>.</span><span class=na>readAllBytes</span><span class=p>(</span><span class=n>fileName</span><span class=p>))</span>
+                    <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=n>e</span><span class=p>:</span> <span class=n>IOException</span><span class=p>)</span> <span class=p>{</span>
+                        <span class=n>e</span><span class=p>.</span><span class=na>printStackTrace</span><span class=p>()</span>
+                        <span class=s>&quot;&quot;</span>
+                    <span class=p>}</span>
                 <span class=p>}</span>
-            <span class=p>}</span>
-        <span class=p>))</span>
+            <span class=p>))</span>
+        <span class=p>}</span>
     <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=n>e</span><span class=p>:</span> <span class=n>IOException</span><span class=p>)</span> <span class=p>{</span>
         <span class=n>emptyMap</span><span class=p>()</span>
     <span class=p>}</span>
