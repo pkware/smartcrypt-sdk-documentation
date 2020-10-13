@@ -1,0 +1,20 @@
+name: Publish docs via GitHub Pages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v1
+
+      - name: Install python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Deploy Java site
+        working-directory: java
+        run: mkdocs gh-deploy --site-dir java --remote-name "https://x-access-token:${github.token}@github.com/${GITHUB_REPOSITORY}.git"
