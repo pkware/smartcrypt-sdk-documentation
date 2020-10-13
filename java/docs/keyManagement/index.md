@@ -335,8 +335,8 @@ implementation.
 
         @Override
         public Map<String, String> onLoadData() {
-            try {
-                return Files.list(Paths.get(folder)).collect(toMap(
+            try (Stream<Path> stream = Files.list(Paths.get(folder))) {
+                return stream.collect(toMap(
                         path -> path.getFileName().toString(),                      // Key
                         fileName -> {                                               // Value
                             try {
@@ -371,6 +371,8 @@ implementation.
 
     // Note: This class is not part of the SDK
     class FilePersistenceCallback : PersistenceCallback {
+        private val folder = "serializedSmartcryptData"
+
         override fun onSaveData(toSave: Map<String, String>, toDelete: Set<String>): Boolean = try {
             Files.createDirectory(Paths.get(folder))
             for ((key, value) in toSave) {
@@ -387,17 +389,19 @@ implementation.
         }
 
         override fun onLoadData(): Map<String, String> = try {
-            Files.list(Paths.get(folder)).collect(toMap(
-                { path -> path.fileName.toString() },             // Key
-                { fileName ->                                     // Value
-                    return@toMap try {
-                        String(Files.readAllBytes(fileName))
-                    } catch (e: IOException) {
-                        e.printStackTrace()
-                        ""
+            Files.list(Paths.get(folder)).use { stream ->
+                stream.collect(toMap(
+                    { path -> path.fileName.toString() },             // Key
+                    { fileName ->                                     // Value
+                        return@toMap try {
+                            String(Files.readAllBytes(fileName))
+                        } catch (e: IOException) {
+                            e.printStackTrace()
+                            ""
+                        }
                     }
-                }
-            ))
+                ))
+            }
         } catch (e: IOException) {
             emptyMap()
         }
