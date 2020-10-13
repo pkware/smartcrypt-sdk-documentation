@@ -1,0 +1,69 @@
+site_name: Smartcrypt Java SDK
+site_url: https://sdk.smartcrypt.com/java
+site_description: "Smartcrypt SDK for Java"
+site_author: PKWARE, Inc.
+remote_branch: gh-pages
+
+copyright: 'Copyright &copy; 2020 PKWARE, Inc.'
+
+theme:
+  name: 'material'
+  # custom_dir: ../overrides
+  favicon: images/smartcrypt.svg
+  logo: images/smartcrypt.svg
+  features:
+    - tabs
+
+extra_css:
+  - 'css/app.css'
+
+markdown_extensions:
+  - smarty
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - tables
+  - admonition
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+        remove_comments: true
+
+nav:
+  - Overview: index.md
+  - General concepts:
+    - Logging: concepts/logging.md
+    - Format and length preserving encryption: concepts/flpe.md
+    - Notifications: concepts/notifications.md
+    - Observables: concepts/observables.md
+  - FAQ: faq.md
+  - Troubleshooting: troubleshooting.md
+  - File encryption:
+    - Overview: fileEncryption/index.md
+    - Installing: fileEncryption/installing.md
+    - Zip file details: fileEncryption/zipDetails.md
+    - API docs: api/index.html?com/pkware/smartcrypt/unstructured/package-summary.html
+  - Key management:
+    - Overview: keyManagement/index.md
+    - Installing: keyManagement/installing.md
+    - Key segregation: keyManagement/keySegregation.md
+    - MetaClient: keyManagement/metaClient.md
+    - API docs: api/index.html?com/pkware/smartcrypt/keymanagement/package-summary.html
+  - Change log: changelog.md
+
