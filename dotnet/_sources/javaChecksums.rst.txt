@@ -1,0 +1,35 @@
+metaclient-2019.7.1.jar
+-----------------------
+
+SHA1: ``b6d2e79b1a5329ece7fa8c576e77600e5175c2de``
+
+MD5: ``36e860184faea2f0c18fe39c6d8db8ed``
+
+metaclient-jvm-2019.7.1.jar
+---------------------------
+
+SHA1: ``0d5807beb3c473c5d0efeff20e9a80af13b6757d``
+
+MD5: ``584d4d2b9ca62d545c4f7f10f7e617ed``
+
+key-management-2019.7.1.jar
+---------------------------
+
+SHA1: ``c0183b0914b749f060e31ed815b4fdb26bc108fa``
+
+MD5: ``f88b0c9ebf8947d4ad944faaf841b736``
+
+structured-2019.7.1.jar
+-----------------------
+
+SHA1: ``0a1c563a15786dc0a0aeae549a2e8b56d8af1c1f``
+
+MD5: ``af18d9535baf1af43fcf0afc3dd67115``
+
+unstructured-2019.7.1.jar
+-------------------------
+
+SHA1: ``27b4073b32564e3a471b602e8b02213d10095ac9``
+
+MD5: ``51348df5a888ff0cee2ac1f8040d7e03``
+

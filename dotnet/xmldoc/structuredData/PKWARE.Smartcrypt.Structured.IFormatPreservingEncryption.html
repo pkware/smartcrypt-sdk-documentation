@@ -1,0 +1,1854 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IFormatPreservingEncryption
+   | Smartcrypt SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IFormatPreservingEncryption
+   | Smartcrypt SDK ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption">
+  
+  
+  <h1 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption" class="text-break">Interface IFormatPreservingEncryption
+  </h1>
+  <div class="markdown level0 summary"><p>Format preserving data encryption library. This class contains numerous methods
+for encrypting and decrypting different types of data while preserving various
+aspects of the original data.
+For example <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptAccountNumber_System_String_System_String_">EncryptAccountNumber(String, String)</a> will encrypt only the numeric portion
+of a string leaving other characters unchanged while <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptAlphanumeric_System_String_System_String_">EncryptAlphanumeric(String, String)</a>
+will encrypt letters and digits while leaving formatting unchanged.</p>
+<p>The data will be encrypted or decrypted using the key supplied by the caller
+when this object is created. The caller should also provide a tweak value
+for each encrypt or decrypt operation. The tweak value should be something
+that will be unique to field or row to strengthen the encryption.
+For example in a relational database a row identifier, or creation timestamp
+might be used.
+It is important that the tweak value not change over time because it if does
+the original data can not be recovered.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PKWARE.Smartcrypt.Structured.html">PKWARE.Smartcrypt.Structured</a></h6>
+  <h6><strong>Assembly</strong>: SmartcryptStructuredData.dll</h6>
+  <h5 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFormatPreservingEncryption : IDisposable</code></pre>
+  </div>
+  <h5 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_examples"><strong>Examples</strong></h5>
+  <pre><code><pre>
+var key = Encoding.UTF8.GetBytes(&quot;12345678901234567890123456789012&quot;);
+var pfe = new FormatPreservingEncryption(key);
+var tweak = &quot;Custom Tweak&quot;;
+var clearText = &quot;12345-ABCD&quot;;
+var cipherText = fpe.EncryptAccountNumber(clearText, tweak);
+</pre></code></pre>
+<p>cipherText now contains &quot;09884-ABCD&quot;;.</p>
+
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.AllowNoOp*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.AllowNoOp">AllowNoOp</h4>
+  <div class="markdown level1 summary"><p>Allow no-op encryption. Defaults to <code>false</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AllowNoOp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptAccountNumber_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptAccountNumber*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptAccountNumber_System_String_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptAccountNumber(System.String,System.String)">DecryptAccountNumber(String, String)</h4>
+  <div class="markdown level1 summary"><p>Decrypts the ASCII digits within the string replacing each digit with another digit.
+Characters outside this range will not be decrypted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DecryptAccountNumber([NotNull] string value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to decrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The decrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the decryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptAlphanumeric_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptAlphanumeric*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptAlphanumeric_System_String_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptAlphanumeric(System.String,System.String)">DecryptAlphanumeric(String, String)</h4>
+  <div class="markdown level1 summary"><p>Decrypts the ASCII uppercase, lowercase and digits within the string
+replacing each character with another from one of these ranges.
+For example an uppercase letter could be replaced with an uppercase character,
+lowercase character or a digit.
+Characters outside this range will not be decrypted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DecryptAlphanumeric([NotNull] string value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to decrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The decrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the decryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptCreditCardNumber_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptCreditCardNumber*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptCreditCardNumber_System_String_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptCreditCardNumber(System.String,System.String)">DecryptCreditCardNumber(String, String)</h4>
+  <div class="markdown level1 summary"><p>Decrypts the ASCII digits within the string that represents a credit card number.
+This function will verify the Luhn checksum prior to decrypting the credit card number.
+Characters outside this range will not be decrypted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DecryptCreditCardNumber([NotNull] string value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to decrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The decrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the decryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptInt_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptInt*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptInt_System_Int32_System_Int32_System_Int32_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptInt(System.Int32,System.Int32,System.Int32,System.String)">DecryptInt(Int32, Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Decrypts an <code>int</code>. The range must match the range provided during encryption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int DecryptInt(int value, int min, int max, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to decrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>The minimum value of the range provided during encryption.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>The maximum value of the range provided during encryption.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The original plaintext <code>int</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptInt_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptInt*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptInt_System_Int32_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptInt(System.Int32,System.String)">DecryptInt(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Decrypts an <code>int</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int DecryptInt(int value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to decrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The original plaintext <code>int</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptLong_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptLong*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptLong_System_Int64_System_Int64_System_Int64_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptLong(System.Int64,System.Int64,System.Int64,System.String)">DecryptLong(Int64, Int64, Int64, String)</h4>
+  <div class="markdown level1 summary"><p>Decrypts a <code>long</code>. The range must match the range provided during encryption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long DecryptLong(long value, long min, long max, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to decrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>The minimum value of the range provided during encryption.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>The maximum value of the range provided during encryption.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><p>The original plaintext <code>long</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptLong_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptLong*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptLong_System_Int64_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptLong(System.Int64,System.String)">DecryptLong(Int64, String)</h4>
+  <div class="markdown level1 summary"><p>Decrypts a <code>long</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long DecryptLong(long value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to decrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><p>The original plaintext <code>long</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptPrintableAscii_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptPrintableAscii*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptPrintableAscii_System_String_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptPrintableAscii(System.String,System.String)">DecryptPrintableAscii(String, String)</h4>
+  <div class="markdown level1 summary"><p>Decrypts the printable ASCII characters (values 9, 32 - 126) within the string.
+Each character within this range will be decrypted and replaced by another
+character in that same range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DecryptPrintableAscii([NotNull] string value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to decrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The decrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the decryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptSocialSecurityNumber_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptSocialSecurityNumber*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptSocialSecurityNumber_System_String_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptSocialSecurityNumber(System.String,System.String)">DecryptSocialSecurityNumber(String, String)</h4>
+  <div class="markdown level1 summary"><p>Decrypts the ASCII digits within the string replacing each digit with another digit.
+Characters outside this range will not be decrypted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DecryptSocialSecurityNumber([NotNull] string value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to decrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The decrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the decryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptString_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptString*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptString_System_String_System_String_System_Collections_Generic_IEnumerable_PKWARE_Cryptography_FormatPreserving_Classifiers_IClassifier__" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptString(System.String,System.String,System.Collections.Generic.IEnumerable{PKWARE.Cryptography.FormatPreserving.Classifiers.IClassifier})">DecryptString(String, String, IEnumerable&lt;IClassifier&gt;)</h4>
+  <div class="markdown level1 summary"><p>Decrypt the specified value using an array of classifiers to determine
+which characters in the string should be decrypted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DecryptString([NotNull] string value, [NotNull] string tweak, [NotNull] IEnumerable&lt;IClassifier&gt; classifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to decrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">PKWARE.Cryptography.FormatPreserving.Classifiers.IClassifier</span>&gt;</td>
+        <td><span class="parametername">classifiers</span></td>
+        <td><p>The list of classifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The decrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the decryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptUpperLowerDigits_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptUpperLowerDigits*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_DecryptUpperLowerDigits_System_String_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.DecryptUpperLowerDigits(System.String,System.String)">DecryptUpperLowerDigits(String, String)</h4>
+  <div class="markdown level1 summary"><p>Decrypts the ASCII uppercase, lowercase and digits within the string
+replacing each character with another of the same type.
+For example uppercase letters will be replaced with uppercase letters
+and digits will be replaced with digits.
+Characters outside this range will not be decrypted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DecryptUpperLowerDigits([NotNull] string value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to decrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The decrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the decryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptAccountNumber_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptAccountNumber*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptAccountNumber_System_String_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptAccountNumber(System.String,System.String)">EncryptAccountNumber(String, String)</h4>
+  <div class="markdown level1 summary"><p>Encrypts the ASCII digits within the string replacing each digit with another digit.
+Characters outside this range will not be encrypted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EncryptAccountNumber([NotNull] string value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to encrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The encrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the encryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for encryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptAlphanumeric_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptAlphanumeric*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptAlphanumeric_System_String_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptAlphanumeric(System.String,System.String)">EncryptAlphanumeric(String, String)</h4>
+  <div class="markdown level1 summary"><p>Encrypts the ASCII uppercase, lowercase and digits within the string
+replacing each character with another from one of those ranges.
+For example an uppercase letter could be replaced with an uppercase character,
+lowercase character or a digit.
+Characters outside this range will not be encrypted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EncryptAlphanumeric([NotNull] string value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to encrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The encrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the encryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for encryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptCreditCardNumber_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptCreditCardNumber*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptCreditCardNumber_System_String_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptCreditCardNumber(System.String,System.String)">EncryptCreditCardNumber(String, String)</h4>
+  <div class="markdown level1 summary"><p>Encrypts the ASCII digits within the string that represents a credit card number.
+This function will verify the Luhn checksum prior to encrypting the credit card number
+and will produce an encrypted value with a valid Luhn checksum.
+Characters outside this range will not be encrypted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EncryptCreditCardNumber([NotNull] string value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to encrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The encrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the encryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for encryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptInt_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptInt*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptInt_System_Int32_System_Int32_System_Int32_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptInt(System.Int32,System.Int32,System.Int32,System.String)">EncryptInt(Int32, Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Encrypts an <code>int</code>, guaranteeing that the result will be part of the specified range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int EncryptInt(int value, int min, int max, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to encrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>The minimum value of the encrypted result. Must be part of the range
+<code>[0, int.MaxValue]</code>. May not be the same value as the <code>max</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>The maximum value of the encrypted result. Must be part of the range
+<code>[0, int.MaxValue]</code>. May not be the same value as the <code>min</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The encrypted <code>int</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for encryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptInt_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptInt*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptInt_System_Int32_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptInt(System.Int32,System.String)">EncryptInt(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Encrypts an <code>int</code>, guaranteeing that the result will be part of the range <code>[0, int.MaxValue]</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int EncryptInt(int value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to encrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The encrypted <code>int</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for encryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptLong_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptLong*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptLong_System_Int64_System_Int64_System_Int64_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptLong(System.Int64,System.Int64,System.Int64,System.String)">EncryptLong(Int64, Int64, Int64, String)</h4>
+  <div class="markdown level1 summary"><p>Encrypts a <code>long</code>, guaranteeing that the result will be part of the specified range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long EncryptLong(long value, long min, long max, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to encrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>The minimum value of the encrypted result. Must be part of the range
+<code>[0, long.MaxValue]</code>. May not be the same value as the <code>max</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>The maximum value of the encrypted result. Must be part of the range
+<code>[0, long.MaxValue]</code>. May not be the same value as the <code>min</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><p>The encrypted <code>long</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for encryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptLong_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptLong*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptLong_System_Int64_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptLong(System.Int64,System.String)">EncryptLong(Int64, String)</h4>
+  <div class="markdown level1 summary"><p>Encrypts a <code>long</code>, guaranteeing that the result will be part of the range <code>[0, long.MaxValue]</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long EncryptLong(long value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to encrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><p>The encrypted <code>long</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for encryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptPrintableAscii_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptPrintableAscii*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptPrintableAscii_System_String_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptPrintableAscii(System.String,System.String)">EncryptPrintableAscii(String, String)</h4>
+  <div class="markdown level1 summary"><p>Encrypts the printable ASCII characters (values 9, 32 - 126) within the string.
+Each character within this range will be encrypted and replaced by another
+character in that same range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EncryptPrintableAscii([NotNull] string value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to encrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The encrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the encryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for encryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptSocialSecurityNumber_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptSocialSecurityNumber*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptSocialSecurityNumber_System_String_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptSocialSecurityNumber(System.String,System.String)">EncryptSocialSecurityNumber(String, String)</h4>
+  <div class="markdown level1 summary"><p>Encrypts the ASCII digits within the string replacing each digit with another digit.
+Characters outside this range will not be encrypted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EncryptSocialSecurityNumber([NotNull] string value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to encrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The encrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the encryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for encryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptString_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptString*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptString_System_String_System_String_System_Collections_Generic_IEnumerable_PKWARE_Cryptography_FormatPreserving_Classifiers_IClassifier__" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptString(System.String,System.String,System.Collections.Generic.IEnumerable{PKWARE.Cryptography.FormatPreserving.Classifiers.IClassifier})">EncryptString(String, String, IEnumerable&lt;IClassifier&gt;)</h4>
+  <div class="markdown level1 summary"><p>Encrypt the specified value using an array of classifiers to determine
+which characters in the string should be encrypted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EncryptString([NotNull] string value, [NotNull] string tweak, [NotNull] IEnumerable&lt;IClassifier&gt; classifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to encrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">PKWARE.Cryptography.FormatPreserving.Classifiers.IClassifier</span>&gt;</td>
+        <td><span class="parametername">classifiers</span></td>
+        <td><p>The list of classifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The encrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the encryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for encryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptUpperLowerDigits_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptUpperLowerDigits*"></a>
+  <h4 id="PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_EncryptUpperLowerDigits_System_String_System_String_" data-uid="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.EncryptUpperLowerDigits(System.String,System.String)">EncryptUpperLowerDigits(String, String)</h4>
+  <div class="markdown level1 summary"><p>Encrypts the ASCII uppercase, lowercase and digits within the string
+replacing each character with another of the same type.
+For example uppercase letters will be replaced with uppercase letters
+and digits will be replaced with digits.
+Characters outside this range will not be encrypted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EncryptUpperLowerDigits([NotNull] string value, [NotNull] string tweak)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string containing the data to encrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tweak</span></td>
+        <td><p>Encryption tweak, this value should be changed for each record or field.
+The same tweak must be used for encryption and decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The encrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PKWARE.Cryptography.FormatPreserving.NoopException</span></td>
+        <td><p>If <a class="xref" href="PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html#PKWARE_Smartcrypt_Structured_IFormatPreservingEncryption_AllowNoOp">AllowNoOp</a> is set to <code>false</code> and the encryption would
+not result in a transformation of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If this key is not allowed to be used for encryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2018 PKWARE, Inc.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

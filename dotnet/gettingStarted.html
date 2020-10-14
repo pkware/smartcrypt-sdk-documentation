@@ -1,0 +1,184 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Getting Started &#8212; Smartcrypt SDK  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Logging" href="logging.html" />
+    <link rel="prev" title="Welcome to Smartcrypt SDK’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>A deployed &amp; <a class="reference internal" href="manager.html"><span class="doc">configured</span></a> Smartcrypt Enterprise Manager</li>
+<li>A good understanding of Smartcrypt, especially <a class="reference internal" href="faq.html"><span class="doc">Smartkeys</span></a> and <a class="reference internal" href="smartkeyStrategies.html"><span class="doc">Smartkey strategies</span></a></li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>The binaries needed for the SDK are hosted by PKWARE. The SDK is split into components so you can pick and choose the components your application needs.</p>
+<div class="section" id="nuget">
+<h3>NuGet<a class="headerlink" href="#nuget" title="Permalink to this headline">¶</a></h3>
+<p>Create a <code class="docutils literal notranslate"><span class="pre">NuGet.Config</span></code> file at the root of your project, next to your <code class="docutils literal notranslate"><span class="pre">.sln</span></code> file, with the following content</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;configuration&gt;</span>
+    <span class="nt">&lt;packageSources&gt;</span>
+        <span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;PKWARE&quot;</span> <span class="na">value=</span><span class="s">&quot;https://packages.smartcrypt.com/repository/nuget-public/&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/packageSources&gt;</span>
+    <span class="nt">&lt;packageSourceCredentials&gt;</span>
+        <span class="nt">&lt;PKWARE&gt;</span>
+            <span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;Username&quot;</span> <span class="na">value=</span><span class="s">&quot;your_username&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;ClearTextPassword&quot;</span> <span class="na">value=</span><span class="s">&quot;your_password&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/PKWARE&gt;</span>
+    <span class="nt">&lt;/packageSourceCredentials&gt;</span>
+<span class="nt">&lt;/configuration&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="manual">
+<h3>Manual<a class="headerlink" href="#manual" title="Permalink to this headline">¶</a></h3>
+<p>If not using NuGet, or if unable to reach the PKWARE NuGet server, you can download the required files manually.</p>
+<ol class="arabic simple">
+<li>Navigate to <a class="reference external" href="https://packages.smartcrypt.com/#browse/browse:nuget-public">https://packages.smartcrypt.com/#browse/browse:nuget-public</a></li>
+<li>Sign in using your credentials</li>
+<li>Refresh the page. You should now be able to see the artifacts.</li>
+<li>Expand that target artifact all the way and download the <code class="docutils literal notranslate"><span class="pre">nupkg</span></code> files needed</li>
+<li>Change the downloaded files from <code class="docutils literal notranslate"><span class="pre">.nupkg</span></code> to <code class="docutils literal notranslate"><span class="pre">.zip</span></code></li>
+<li>Extract the DLL from the <code class="docutils literal notranslate"><span class="pre">lib</span></code> folder in the zip, and check the <code class="docutils literal notranslate"><span class="pre">.nuspec</span></code> file for any transitive dependencies needed.</li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The repository is password protected; contact <a class="reference external" href="mailto:sales&#37;&#52;&#48;pkware&#46;com">PKWARE Sales and Support</a> for access.</p>
+</div>
+<p>Add the following NuGet packages</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">PKWARE.Smartcrypt.KeyManagement</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">PKWARE.Smartcrypt.Structured</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">PKWARE.Smartcrypt.Unstructured</span></code></li>
+</ul>
+<div class="section" id="framework-compatibility">
+<h3>Framework compatibility<a class="headerlink" href="#framework-compatibility" title="Permalink to this headline">¶</a></h3>
+<p>PKWARE provides support for .NET Framework 4.6.1 and up on Windows, and for .NET Core 2.1 on all platforms, which is the LTS release from Microsoft. The SDK targets .NET Standard 2.0, so other frameworks may work despite being out of support. A complete compatibility matrix is available <a class="reference external" href="https://docs.microsoft.com/en-us/dotnet/standard/net-standard">from Microsoft</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Unstructured Data component requires the PKArchive.NET Toolkit.</p>
+</div>
+</div>
+<div class="section" id="visual-studio">
+<h3>Visual Studio<a class="headerlink" href="#visual-studio" title="Permalink to this headline">¶</a></h3>
+<p>If using Visual Studio, it is recommended you use 2017. If using 2015, you must:</p>
+<ul class="simple">
+<li>Install <a class="reference external" href="https://www.nuget.org/downloads">Nuget VSIX 3.6 or higher</a></li>
+<li>Install <a class="reference external" href="https://aka.ms/netstandard-build-support-netfx">.NET Standard build support for Visual Studio 2015</a></li>
+<li>Install <a class="reference external" href="https://www.microsoft.com/net/download/">.NET Core 2.1 SDK or higher</a></li>
+<li>Modify your <code class="docutils literal notranslate"><span class="pre">.csproj</span></code> file by adding <code class="docutils literal notranslate"><span class="pre">&lt;ImplicitlyExpandDesignTimeFacades&gt;false&lt;/ImplicitlyExpandDesignTimeFacades&gt;</span></code> to the first <code class="docutils literal notranslate"><span class="pre">PropertyGroup</span></code>. This <a class="reference external" href="https://stackoverflow.com/a/44648397/2502247">StackOverflow answer</a> gives a good example.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/smartcrypt.svg" alt="Logo"/>
+            </a></p>
+<h1 class="logo"><a href="index.html">Smartcrypt SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="logging.html">Logging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="login.html">Implicit Login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manager.html">Smartcrypt Enterprise Manager Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="smartkeyStrategies.html">Smartkey Strategies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flpe.html">Format and Length Preserving Encryption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="checksums.html">Package Integrity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apiDocs.html">API Docs</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Smartcrypt SDK’s documentation!</a></li>
+      <li>Next: <a href="logging.html" title="next chapter">Logging</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, PKWARE, Inc.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

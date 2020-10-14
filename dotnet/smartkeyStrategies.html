@@ -1,0 +1,132 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Smartkey Strategies &#8212; Smartcrypt SDK  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Format and Length Preserving Encryption" href="flpe.html" />
+    <link rel="prev" title="Smartcrypt Enterprise Manager Configuration" href="manager.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="smartkey-strategies">
+<h1>Smartkey Strategies<a class="headerlink" href="#smartkey-strategies" title="Permalink to this headline">¶</a></h1>
+<p>Determining your strategy for structuring your Smartkeys is important for security and ease of management. Below are some typical scenarios and strategies for structuring keys in each scenario. Before continuing, it is important to have a good understanding of <a class="reference internal" href="faq.html"><span class="doc">Smartkeys</span></a></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Kind</span></code> property of Smartkeys is used to sort Smartkeys into logical groups. It is used in conjunction with the Kind filter on Applications to create a whitelist of which groups of keys an application may have access to. This is useful if displaying Smartkeys in a UI, when having to make statements about which machines may have a Smartkey, and for applying internal policies to Smartkey distribution. Let’s demonstrate with an example.</p>
+<p>Recall that _permission_ to use the key is tied to a User identity, the whitelist only servers to determine if that user can use the Smartkey with a specific Application.</p>
+<div class="section" id="general-use">
+<h2>General use<a class="headerlink" href="#general-use" title="Permalink to this headline">¶</a></h2>
+<p>In most cases, an application only needs one Kind associated with it. For example, you might indicate that the Application for your customer management system (CMS) should receive <code class="docutils literal notranslate"><span class="pre">acme_cms</span></code> keys, but that your custom instant messenger (IM) should receive <code class="docutils literal notranslate"><span class="pre">acme_im</span></code> keys.</p>
+<p>In some cases though, you may want to enforce additional rules.</p>
+</div>
+<div class="section" id="kinds-for-security-groups">
+<h2>Kinds for security groups<a class="headerlink" href="#kinds-for-security-groups" title="Permalink to this headline">¶</a></h2>
+<p>You may have a set of Smartkeys that are used for extremely sensitive data, regardless of the application, with a Kind of <code class="docutils literal notranslate"><span class="pre">acme_sensitive</span></code>. In this case, your CMS and IM applications should both be allowed to use these key Kinds, in additional to their application-specific Kinds.</p>
+</div>
+<div class="section" id="kinds-for-key-purpose">
+<h2>Kinds for key purpose<a class="headerlink" href="#kinds-for-key-purpose" title="Permalink to this headline">¶</a></h2>
+<p>You may have a set of Smartkeys that are used for a specific type of data. For example, you may define the Kind <code class="docutils literal notranslate"><span class="pre">acme_database</span></code> for all keys that are used to encrypt database columns. In this case, you would want both your CMS and your IM applications to have access to these Kinds so they can use the corresponding Smartkeys to encrypt data before storing them.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/smartcrypt.svg" alt="Logo"/>
+            </a></p>
+<h1 class="logo"><a href="index.html">Smartcrypt SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logging.html">Logging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="login.html">Implicit Login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manager.html">Smartcrypt Enterprise Manager Configuration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Smartkey Strategies</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-use">General use</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kinds-for-security-groups">Kinds for security groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kinds-for-key-purpose">Kinds for key purpose</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="flpe.html">Format and Length Preserving Encryption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="checksums.html">Package Integrity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apiDocs.html">API Docs</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="manager.html" title="previous chapter">Smartcrypt Enterprise Manager Configuration</a></li>
+      <li>Next: <a href="flpe.html" title="next chapter">Format and Length Preserving Encryption</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, PKWARE, Inc.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
