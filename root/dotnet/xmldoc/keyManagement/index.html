@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Smartcrypt Key Management | Smartcrypt SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Smartcrypt Key Management | Smartcrypt SDK ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="key_management_index">
+<h1 id="smartcrypt-key-management">Smartcrypt Key Management</h1>
+
+<p>The Key Management component is the starting point for all interactions with the Smartcrypt SDK. The Key Management
+component makes it easy to login as a Smartcrypt user and to create, retrieve, share, and use Smartkeys. Policies
+configured on the Smartcrypt manager are automatically enforced, and data stored locally are cryptographically tamper
+resistant.</p>
+<h2 id="setup">Setup</h2>
+<p>To get started, you&#39;ll need a new instance of <code>IKeyManagement</code>. See the <a class="xref" href="../metaclient/index.html#setup">MetaClient</a>
+docs for details on how to obtain that instance.</p>
+<pre><code class="lang-cs" name="Setup">
+private sealed class InMemoryPersistenceCallback : IPersistenceCallback
+{
+  private readonly IDictionary&lt;string, string&gt; stored
+    = new Dictionary&lt;string, string&gt;();
+
+  public bool OnSaveData(IDictionary&lt;string, string&gt; toSave, ISet&lt;string&gt; toDelete)
+  {
+    foreach (var (key, value) in toSave) stored[key] = value;
+    foreach (var key in toDelete) stored.Remove(key);
+    return true;
+  }
+
+  public IDictionary&lt;string, string&gt; OnLoadData() =&gt;
+    new Dictionary&lt;string, string&gt;(stored);
+}
+
+public static ISmartcryptKeyManagement SetUp(
+  [NotNull] IMetaClient metaClient
+) =&gt; new SmartcryptKeyManagement.Builder()
+  .MetaClient(metaClient)
+
+  // In real code, you should use something more durable than an in-memory store
+  .PersistenceCallback(new InMemoryPersistenceCallback())
+  .Build();
+
+</code></pre><h2 id="logging-in">Logging In</h2>
+<pre><code class="lang-csharp">var metaClient = new MetaClient.Builder
+{
+    AppName = &quot;Logging In&quot;,
+    AppVersion = &quot;1.0.0&quot;,
+    Server = &quot;https://oh1.smartcrypt.com/mds&quot;
+}.Build();
+var smartcryptKeyManagement = new SmartcryptKeyManagement.Builder()
+    .MetaClient(metaClient)
+    .PersistenceCallback(new InMemoryPersistenceCallback())
+    .Build();
+
+var accountManagement = smartcryptKeyManagement.AccountManagement();
+
+/*
+ * There are 3 types of login methods: managed, unmanaged, and implicit.
+ *
+ * Managed login is used for accounts that are managed by Active Directory. The credentials used are the
+ * same as those of the domain account.
+ *
+ * This login variant requires the developer to provide credentials, but does not require any system
+ * configuration.
+ */
+accountManagement.LoginManagedAccount(&quot;example@smartcrypt.com&quot;, &quot;password&quot;);
+
+/*
+ * Implicit login uses the domain account of the computer user who owns the process running MetaClient.
+ * Typically, this is the user logged-in to Windows, Mac, etc, but may be a different user. On Windows,
+ * Integrated Windows Authentication is used for a seamless experience. On *nix systems, Kerberos is used,
+ * and the kinit program, or a similar utility, must be used to configure the account prior to login.
+ *
+ * This login variant does not require the developer to provide any credentials, but does require system
+ * configuration by the system administrator.
+ *
+ * Note that to use implicit login, the developer must supply a server URL to the MetaClient builder.
+ */
+accountManagement.LoginImplicitAccount();
+
+/*
+ * Unmanaged login is used for accounts that are created in Smartcrypt Enterprise Manager. These do not live
+ * in Active Directory. The credentials are owned by Smartcrypt Enterprise Manager.
+ *
+ * This login variant requires the developer to provide credentials, but does not require any system
+ * configuration.
+ */
+accountManagement.LoginUnManagedAccount(&quot;unmanaged@smartcrypt.com&quot;, &quot;password&quot;);
+</code></pre><h2 id="creating-and-updating-smartkeys">Creating and Updating Smartkeys</h2>
+<pre><code class="lang-csharp">var metaClient = new MetaClient.Builder()
+{
+    AppName = &quot;CreatingAndUpdatingSmartkeys&quot;,
+    AppVersion = &quot;1.0.0&quot;
+}.Build();
+var smartcryptKeyManagement = new SmartcryptKeyManagement.Builder()
+    .MetaClient(metaClient)
+    .PersistenceCallback(new InMemoryPersistenceCallback())
+    .Build();
+
+smartcryptKeyManagement.AccountManagement().LoginManagedAccount(&quot;&lt;your username&gt;&quot;, &quot;&lt;your password&gt;&quot;);
+
+var smartkeys = smartcryptKeyManagement.Smartkeys();
+
+// To create a new Smartkey, prepare a SmartkeySpec with the information for the new key.
+var createSmartkeySpec = new SmartkeySpec
+{
+ Name = &quot;Sample&quot;,
+ Kind = &quot;acme_sample&quot;,
+};
+createSmartkeySpec.AddAccess.Add(&quot;john.doe@example.com&quot;);
+
+// Key creation is synchronous, but you can be notified of updates to the key by listening to the Observable
+var keyObservable = smartkeys.Create(createSmartkeySpec);
+var smartkey = keyObservable
+    .Do(key =&gt; Console.WriteLine($&quot;Got revision {key.Revision} for created Smartkey {key.Name}&quot;))
+    .Take(1)
+    .Wait();
+
+
+// To update a key, once again prepare a SmartkeySpec. Most types of keys can be updated in some fashion
+var updateSmartkeySpec = new SmartkeySpec {Name = &quot;Updated Sample&quot;};
+updateSmartkeySpec.RemoveAccess.Add(&quot;john.doe@example.com&quot;);
+
+// Key updates are synchronous, but once again, you can be notified of updates to the key by listening to
+// the observable
+var updatedKeyObservable = smartkeys.Update(smartkey, updateSmartkeySpec);
+updatedKeyObservable
+    .Subscribe(key =&gt; Console.WriteLine($&quot;Got updated Smartkey {key.Name}&quot;));
+</code></pre><h2 id="background-processing">Background Processing</h2>
+<p>Smartcrypt Key Management performs operations in the background on your behalf. In some cases, you may need more control
+over how these operations occur. This sample demonstrates monitoring and controlling these operations.</p>
+<pre><code class="lang-csharp">var metaClient = new MetaClient.Builder
+{
+    AppName = &quot;BackgroundProcessing&quot;,
+    AppVersion = &quot;1.0.0&quot;
+}.Build();
+var smartcryptKeyManagement = new SmartcryptKeyManagement.Builder()
+    .MetaClient(metaClient)
+    .PersistenceCallback(new InMemoryPersistenceCallback())
+    .Build();
+
+// Background errors come out as Notifications and can easily be logged or monitored
+smartcryptKeyManagement.DataStorage().Notifications()
+    .Select(notifications =&gt; notifications.Where(notification =&gt; notification is SyncProblemNotification))
+    .SelectMany(problems =&gt; problems.ToObservable())
+    .Subscribe(problem =&gt; Console.WriteLine(problem.Message));
+
+// Background processing can be paused. This may be necessary if your app goes into the a state where the
+// process is alive, but the user does not expect it to be running, such as a backgrounded mobile app
+smartcryptKeyManagement.PauseBackgroundProcessing();
+
+// Background processing can also be resumed
+smartcryptKeyManagement.ResumeBackgroundProcessing();
+</code></pre><h2 id="persisting-smartkeys">Persisting Smartkeys</h2>
+<p>It is common that encrypted data need to have information about which Smartkey to use stored alongside it. The Smartcrypt Key Management SDK provides a mechanism for serializing and deserializing Smartkeys in a way that doesn&#39;t leak information and makes key retrieval on a separate system bulletproof.</p>
+<pre><code class="lang-csharp">var metaClient = new MetaClient.Builder
+{
+    AppName = &quot;PersistingSmartkeys&quot;,
+    AppVersion = &quot;1.0.0&quot;
+}.Build();
+var smartcryptKeyManagement = new SmartcryptKeyManagement.Builder()
+    .MetaClient(metaClient)
+    .PersistenceCallback(new InMemoryPersistenceCallback())
+    .Build();
+
+smartcryptKeyManagement.AccountManagement().LoginManagedAccount(&quot;&lt;your username&gt;&quot;, &quot;&lt;your password&gt;&quot;);
+
+var smartkeys = smartcryptKeyManagement.Smartkeys();
+
+// For this example, any Smartkey will do. We&#39;ll just take the first one we get
+var smartkey = smartkeys.ListAll()
+    .ToTask().Result
+    .First();
+
+// Smartkey serialization is straightforward. When serializing, the information of the provided Smartkey is
+// used.
+var serializedRepresentation = smartkeys.Serialize(smartkey);
+Console.WriteLine($&quot;Serialized Smartkey {smartkey.Name}: {serializedRepresentation}&quot;);
+
+// Retrieving a Smartkey from its serialized form is also straightforward.
+var deserializedSmartkey = smartkeys.Deserialize(serializedRepresentation).Take(1).Wait();
+Console.WriteLine($&quot;Smartkey  {deserializedSmartkey?.Name}&quot;);
+</code></pre><h2 id="persisting-metadata">Persisting Metadata</h2>
+<pre><code class="lang-csharp">var metaClient = new MetaClient.Builder
+{
+    AppName = &quot;PersistingMetadata&quot;,
+    AppVersion = &quot;1.0.0&quot;
+}.Build();
+var builder = new SmartcryptKeyManagement.Builder()
+    .MetaClient(metaClient);
+
+
+// Persistence is done as part of sync. Sync happens on a worker thread, so the persistence happens on the
+// same worker thread. Persistence is synchronous, and the next sync will wait until persistence has
+// completed, but SDK consumers don&#39;t need to know that.
+var smartcryptKeyManagement = builder
+    .PersistenceCallback(new FilePersistenceCallback())
+    .Build();
+
+// Data restore, both threading and timing, is controlled by the developer
+var dataStorage = smartcryptKeyManagement.DataStorage();
+await Task.Run(() =&gt;
+{
+    dataStorage.Restore();
+});
+
+// Be sure to define this class somewhere
+private class FilePersistenceCallback : IPersistenceCallback
+{
+    private const string Folder = &quot;serializedMetadata/&quot;;
+    public bool OnSaveData(IDictionary&lt;string, string&gt; toSave, ISet&lt;string&gt; toDelete)
+    {
+        try
+        {
+            foreach (var (name, value) in toSave)
+            {
+                File.WriteAllText(Folder + name, value);
+            }
+
+            foreach (var name in toDelete)
+            {
+                File.Delete(Folder + name);
+            }
+
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    public IDictionary&lt;string, string&gt; OnLoadData()
+    {
+        return Directory.EnumerateFiles(Folder)
+        .ToDictionary(
+            it =&gt; it.Split(&#39;/&#39;)[1],
+            File.ReadAllText
+        );
+    }
+}
+</code></pre><h2 id="working-with-observables">Working with Observables</h2>
+<p>The Smartcrypt Key Management SDK relies heavily on Observables. These may be unfamiliar, but are easy to get a hang of
+or convert to a more familiar paradigm. If unfamiliar with reactive programming, we recommend taking a look at the
+<a href="http://reactivex.io/tutorials.html">ReactiveX website</a> for tutorials, guides, and more.</p>
+<pre><code class="lang-csharp">// Observables emit a stream of events. This is a push model rather than a pull model.
+var observable = Observable.Range(0, 5);
+
+// Observables can be transformed
+var intsAsStrings = observable.Select(number =&gt; number.ToString());
+
+// Most LINQ operations are available
+var filteredInts = intsAsStrings.Where(number =&gt; number != &quot;3&quot;);
+
+// Observables only process when subscribed to. All of the previous &quot;work&quot; is only setup - none of it has
+// run yet. When we subscribe now, the work will happen.
+var subscription = filteredInts.Subscribe(Console.WriteLine);
+
+// Subscriptions must be disposed when we&#39;re done with them, otherwise the stream will continue processing
+// when we no longer need it
+subscription.Dispose();
+
+
+// Observable can easily be integrated into an Async/Await workflow
+var lastNumber = await Observable.Range(0, 5).ToTask();
+Console.WriteLine($&quot;With a task: {lastNumber}&quot;);
+
+// Observables can also be made blocking, effectively making them a single, synchronous call
+var lastNumberBlocking = Observable.Range(0, 4).LastAsync().Wait();
+Console.WriteLine($&quot;With a blocking call: {lastNumberBlocking}&quot;);
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2018 PKWARE, Inc.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

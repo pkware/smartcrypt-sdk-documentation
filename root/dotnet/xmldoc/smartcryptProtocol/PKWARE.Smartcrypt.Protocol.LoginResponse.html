@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LoginResponse
+   | Smartcrypt SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LoginResponse
+   | Smartcrypt SDK ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse">
+  
+  
+  <h1 id="PKWARE_Smartcrypt_Protocol_LoginResponse" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse" class="text-break">Class LoginResponse
+  </h1>
+  <div class="markdown level0 summary"><p>A response to login attempts. Check <a class="xref" href="PKWARE.Smartcrypt.Protocol.LoginResponse.html#PKWARE_Smartcrypt_Protocol_LoginResponse_matched">matched</a> to determine whether the login attempt needs to be
+retried with updated parameters or not.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">LoginResponse</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="PKWARE.Smartcrypt.Protocol.ILoginOkResponse.html">ILoginOkResponse</a></div>
+    <div><a class="xref" href="PKWARE.Smartcrypt.Protocol.ILoginResetResponse.html">ILoginResetResponse</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PKWARE.Smartcrypt.Protocol.html">PKWARE.Smartcrypt.Protocol</a></h6>
+  <h6><strong>Assembly</strong>: SmartcryptProtocol.dll</h6>
+  <h5 id="PKWARE_Smartcrypt_Protocol_LoginResponse_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class LoginResponse : ILoginOkResponse, ILoginResetResponse</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_LoginResponse_challenge_" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse.challenge*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_LoginResponse_challenge" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse.challenge">challenge</h4>
+  <div class="markdown level1 summary"><p><inheritdoc cref="P:PKWARE.Smartcrypt.Protocol.ILoginResetResponse.challenge"></inheritdoc> <code>null</code> only when <a class="xref" href="PKWARE.Smartcrypt.Protocol.LoginResponse.html#PKWARE_Smartcrypt_Protocol_LoginResponse_matched">matched</a> is
+<code>true</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string challenge { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_LoginResponse_loginRounds_" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse.loginRounds*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_LoginResponse_loginRounds" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse.loginRounds">loginRounds</h4>
+  <div class="markdown level1 summary"><p><inheritdoc cref="P:PKWARE.Smartcrypt.Protocol.ILoginResetResponse.loginRounds"></inheritdoc> Non-zero when <a class="xref" href="PKWARE.Smartcrypt.Protocol.LoginResponse.html#PKWARE_Smartcrypt_Protocol_LoginResponse_matched">matched</a> is
+<code>false</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int loginRounds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_LoginResponse_loginSalt_" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse.loginSalt*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_LoginResponse_loginSalt" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse.loginSalt">loginSalt</h4>
+  <div class="markdown level1 summary"><p><inheritdoc cref="P:PKWARE.Smartcrypt.Protocol.ILoginResetResponse.loginSalt"></inheritdoc> <code>null</code> only when <a class="xref" href="PKWARE.Smartcrypt.Protocol.LoginResponse.html#PKWARE_Smartcrypt_Protocol_LoginResponse_matched">matched</a> is
+<code>true</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string loginSalt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_LoginResponse_matched_" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse.matched*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_LoginResponse_matched" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse.matched">matched</h4>
+  <div class="markdown level1 summary"><p><code>true</code> if the request was made with the appropriate parameters; <code>false</code> if the request needs to be
+retried.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool matched { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_Protocol_LoginResponse_matched_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When <code>true</code>, it is safe to cast this object as a <a class="xref" href="PKWARE.Smartcrypt.Protocol.ILoginOkResponse.html">ILoginOkResponse</a>; when
+<code>false</code> it is safe to cast this object as a <a class="xref" href="PKWARE.Smartcrypt.Protocol.ILoginResetResponse.html">ILoginResetResponse</a>.</p>
+</div>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_LoginResponse_pid_" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse.pid*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_LoginResponse_pid" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse.pid">pid</h4>
+  <div class="markdown level1 summary"><p><inheritdoc cref="P:PKWARE.Smartcrypt.Protocol.ILoginOkResponse.pid"></inheritdoc> <code>null</code> only when <a class="xref" href="PKWARE.Smartcrypt.Protocol.LoginResponse.html#PKWARE_Smartcrypt_Protocol_LoginResponse_matched">matched</a> is
+<code>false</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public Pid pid { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.Pid.html">Pid</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_LoginResponse_user_" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse.user*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_LoginResponse_user" data-uid="PKWARE.Smartcrypt.Protocol.LoginResponse.user">user</h4>
+  <div class="markdown level1 summary"><p><inheritdoc cref="P:PKWARE.Smartcrypt.Protocol.ILoginOkResponse.user"></inheritdoc> <code>null</code> only when <a class="xref" href="PKWARE.Smartcrypt.Protocol.LoginResponse.html#PKWARE_Smartcrypt_Protocol_LoginResponse_matched">matched</a> is
+<code>false</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public User user { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.User.html">User</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="PKWARE.Smartcrypt.Protocol.ILoginOkResponse.html">ILoginOkResponse</a>
+  </div>
+  <div>
+      <a class="xref" href="PKWARE.Smartcrypt.Protocol.ILoginResetResponse.html">ILoginResetResponse</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2018 PKWARE, Inc.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

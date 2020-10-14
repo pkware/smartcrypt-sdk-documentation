@@ -1,0 +1,8 @@
+Versions
+^^^^^^^^
+
+* ``com.pkware.smartcrypt:metaclient:2019.7.1``
+* ``com.pkware.smartcrypt:metaclient-jvm:2019.7.1``
+* ``com.pkware.smartcrypt:key-management:2019.7.1``
+* ``com.pkware.smartcrypt:structured:2019.7.1``
+* ``com.pkware.smartcrypt:unstructured:2019.7.1``

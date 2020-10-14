@@ -1,0 +1,2763 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IMetaClient
+   | Smartcrypt SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IMetaClient
+   | Smartcrypt SDK ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient">
+  
+  
+  <h1 id="PKWARE_Smartcrypt_MetaClient_IMetaClient" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient" class="text-break">Interface IMetaClient
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PKWARE.Smartcrypt.MetaClient.html">PKWARE.Smartcrypt.MetaClient</a></h6>
+  <h6><strong>Assembly</strong>: MetaClient.dll</h6>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMetaClient</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_CryptoProvider_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.CryptoProvider*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_CryptoProvider" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.CryptoProvider">CryptoProvider</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a> that this MetaClient is using.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+ICryptoProvider CryptoProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_IsolatedMode_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.IsolatedMode*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_IsolatedMode" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.IsolatedMode">IsolatedMode</h4>
+  <div class="markdown level1 summary"><p>In isolated mode no network communication is allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsolatedMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_Logger_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.Logger*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_Logger" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.Logger">Logger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+Logger Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.Logging.Logger.html">Logger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ApplyContingencyGroup_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.ApplyContingencyGroup*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ApplyContingencyGroup_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.ApplyContingencyGroup(System.String)">ApplyContingencyGroup(String)</h4>
+  <div class="markdown level1 summary"><p>Data are being encrypted with a custom password. To ensure that the organization still has access to the data
+encrypt the password for the Contingency Association&apos;s RSA public key and store it in the JSON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+EncryptionInfo ApplyContingencyGroup([CanBeNull] string sessionKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sessionKey</span></td>
+        <td><p>If <code>null</code>, a new 256 bit session key is created. Must not be more than 214
+bytes in length.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.EncryptionInfo.html">EncryptionInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryUpgrade">CategoryUpgrade</a> if the data are newer than understood by this software.
+With <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryInternal">CategoryInternal</a> if the
+data are in an invalid format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_askForAsset_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.askForAsset*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_askForAsset_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.askForAsset(System.String)">askForAsset(String)</h4>
+  <div class="markdown level1 summary"><p>Requests the specified asset from the Metadata Server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Should only be used by internal PKWARE Archive clients&quot;)]
+void askForAsset(string jsonOrUrn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">jsonOrUrn</span></td>
+        <td><p>Whenever possible, the full asset JSON should be provided. The JSON will include all information to
+correctly find an asset. If only the URN is provided, the asset may not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_askForAsset_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the asset is already held, this is a no-op. If the asset is homed to a different server than the
+user, the asset will not be fetched, and this is a no-op. If not currently online, the request will be cached
+and processed in the future.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With a <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryInternal">CategoryInternal</a> if the json provided is in an unrecognized format. Other
+variations of the exception may be thrown as well.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_canCreateKey_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.canCreateKey*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_canCreateKey_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.canCreateKey(System.String)">canCreateKey(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool canCreateKey(string kind)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">kind</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_CanRecoveryBePerformed_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.CanRecoveryBePerformed*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_CanRecoveryBePerformed" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.CanRecoveryBePerformed">CanRecoveryBePerformed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanRecoveryBePerformed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_canUseUnmanagedAccount_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.canUseUnmanagedAccount*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_canUseUnmanagedAccount" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.canUseUnmanagedAccount">canUseUnmanagedAccount()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool canUseUnmanagedAccount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ChangeEmail_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.ChangeEmail*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ChangeEmail_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.ChangeEmail(System.String)">ChangeEmail(String)</h4>
+  <div class="markdown level1 summary"><p>Changes the email address of the current user. Performs network IO to immediately sync the change to the
+server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ChangeEmail([NotNull] string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The new email address to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ChangeName_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.ChangeName*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ChangeName_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.ChangeName(System.String)">ChangeName(String)</h4>
+  <div class="markdown level1 summary"><p>Changes the name of the current user. Performs network IO to immediately sync the change to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ChangeName([NotNull] string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The new name to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ChangePassword_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.ChangePassword*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ChangePassword_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.ChangePassword(System.String,System.String)">ChangePassword(String, String)</h4>
+  <div class="markdown level1 summary"><p>Changes the password of the current user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ChangePassword([NotNull] string oldPassword, [NotNull] string newPassword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">oldPassword</span></td>
+        <td><p>The current password of the user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">newPassword</span></td>
+        <td><p>The new password for the user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ChangePassword_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When performing a password change using a managed user, the account is converted to be an unmanaged
+user. This causes the account password to detach from the Active Directory password. However, the account
+keeps associations with AD Groups used in Policies, Smartkeys, Assignments, and so forth. Prior to being
+able to change the password of a managed user, the server must be configured to allow that user to become an
+unmanaged user. See the
+<a href="https://support.pkware.com/home/smar/latest/sem-reference/4-advanced/accounts">SEM Documentation</a>
+for guidance on how to accomplish this.</p>
+</div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_changesWereNotSaved_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.changesWereNotSaved*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_changesWereNotSaved" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.changesWereNotSaved">changesWereNotSaved()</h4>
+  <div class="markdown level1 summary"><p>If unable to save serials, this function must be called. The localDirty flags will be reset to the state
+before the request to serialize.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void changesWereNotSaved()</code></pre>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ChangeUrl_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.ChangeUrl*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ChangeUrl_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.ChangeUrl(System.String)">ChangeUrl(String)</h4>
+  <div class="markdown level1 summary"><p>Used exclusively for SMDS identities. Used to indicate the URL of the server hosting the identity. Performs
+network IO to immediately sync the change to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ChangeUrl([NotNull] string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The new URL to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_CreateAccount_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.CreateAccount*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_CreateAccount_System_String_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.CreateAccount(System.String,System.String,System.String)">CreateAccount(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Does not pay attention to whether or not an account already exists. All metadata will be
+replaced with new ones. ONLY CALL THIS IF YOU&apos;VE ALREADY FAILED TO LOG IN. Does not sync and does not create
+keys.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateAccount([NotNull] string email, [CanBeNull] string name, [NotNull] string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">email</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Can be <code>null</code> in which case this user won&apos;t have a name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If account creation fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_CreateAccount_System_String_System_String_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_CreateSatelliteServerAccount_System_String_System_String_System_String_System_String_System_String_">CreateSatelliteServerAccount(String, String, String, String, String)</a></div>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_CreateSatelliteServerAccount_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.CreateSatelliteServerAccount*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_CreateSatelliteServerAccount_System_String_System_String_System_String_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.CreateSatelliteServerAccount(System.String,System.String,System.String,System.String,System.String)">CreateSatelliteServerAccount(String, String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Create a new satellite server account for a new Smartcrypt Enterprise Manager. The account will be created online unless in isolated mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateSatelliteServerAccount([NotNull] string email, [NotNull] string name, [NotNull] string url, [NotNull] string password, [CanBeNull] string licenseRequest = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">email</span></td>
+        <td><p>Email address of the satellite account.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the satellite account.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>URL of the satellite account.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Password for the account.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">licenseRequest</span></td>
+        <td><p>Optional JSON string with license request. Will only be used when creating an
+online account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_CreateSatelliteServerAccount_System_String_System_String_System_String_System_String_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_IsolatedMode">IsolatedMode</a></div>
+      <div><a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_CreateAccount_System_String_System_String_System_String_">CreateAccount(String, String, String)</a></div>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_DecryptV2_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.DecryptV2*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_DecryptV2_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.DecryptV2(System.String)">DecryptV2(String)</h4>
+  <div class="markdown level1 summary"><p>Performs <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.Protocol.EncryptionTactic.html#PKWARE_Smartcrypt_Protocol_EncryptionTactic_V2">V2</a> decryption using the RSA private key of the logged-in identity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+byte[] DecryptV2([NotNull] string data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data to decrypt.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><p>The decrypted data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryUpgrade">CategoryUpgrade</a> if the data are newer than understood by this software.
+With <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryInternal">CategoryInternal</a> if the
+data are in an invalid format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_DecryptV2_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.html#PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV2_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte___">DecryptV2(ICryptoProvider, String, Byte[])</a></div>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_DecryptV3_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.DecryptV3*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_DecryptV3_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.DecryptV3(System.String)">DecryptV3(String)</h4>
+  <div class="markdown level1 summary"><p>Performs <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.Protocol.EncryptionTactic.html#PKWARE_Smartcrypt_Protocol_EncryptionTactic_V3">V3</a> decryption using the AES key of the logged-in identity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+byte[] DecryptV3([NotNull] string data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data to decrypt.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><p>The decrypted data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryUpgrade">CategoryUpgrade</a> if the data are newer than understood by this software.
+With <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryInternal">CategoryInternal</a> if the
+data are in an invalid format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_DecryptV3_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.html#PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV3_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte___">DecryptV3(ICryptoProvider, String, Byte[])</a></div>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_DeleteAppDatum_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.DeleteAppDatum*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_DeleteAppDatum_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.DeleteAppDatum(System.String,System.String)">DeleteAppDatum(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteAppDatum(string kind, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">kind</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_EncryptAccountPassword_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.EncryptAccountPassword*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_EncryptAccountPassword_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.EncryptAccountPassword(System.String)">EncryptAccountPassword(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+string EncryptAccountPassword([NotNull] string accountPassword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">accountPassword</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GET_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GET*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GET_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GET(System.String)">GET(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GET(string suffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">suffix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetApplicationStatus_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetApplicationStatus*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetApplicationStatus_System_String_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetApplicationStatus(System.String,System.String,System.String)">GetApplicationStatus(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Returns an <a class="xref" href="PKWARE.Smartcrypt.MetaClient.ApplicationStatus.html">ApplicationStatus</a> through which <a class="xref" href="PKWARE.Smartcrypt.MetaClient.ApplicationCompliance.html">ApplicationCompliance</a> can be
+reported. A new <a class="xref" href="PKWARE.Smartcrypt.MetaClient.ApplicationStatus.html">ApplicationStatus</a> will be created if one does not already exist for the given
+parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+ApplicationStatus GetApplicationStatus([NotNull] string kind, [CanBeNull] string version = null, [NotNull] string referenceUrn = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">kind</span></td>
+        <td><p>The name of the component for which this entry is being reported. For example,
+<code>Smartpoint</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>An optional string of the version of the component for which this entry is being
+reported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">referenceUrn</span></td>
+        <td><p>A unique identifier, used to differentiate statuses when multiple exist for the
+same app + <code data-dev-comment-type="paramref" class="paramref">kind</code> combo. For example, a single app may have multiple Smartpoints, so the
+Smartpoint URN is provided. Must be provided, but may be empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.ApplicationStatus.html">ApplicationStatus</a></td>
+        <td><p>An application status object which can be updated with <a class="xref" href="PKWARE.Smartcrypt.MetaClient.ApplicationCompliance.html">ApplicationCompliance</a> objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetApplicationStatus_System_String_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Application status is useful for reporting to Smartcrypt Enterprise Manager the state of various
+subsystems of your application. For example, PKWARE&apos;s PDE application uses application status to report
+whether or not all files in a Smartpoint are encrypted according to the policy defined for that smartpoint.</p>
+</div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetArchiveDecryptionPassword_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetArchiveDecryptionPassword*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetArchiveDecryptionPassword_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetArchiveDecryptionPassword(System.String)">GetArchiveDecryptionPassword(String)</h4>
+  <div class="markdown level1 summary"><p>Given asset information as described below, extracts a decryption password. May perform network I/O and will
+auto-request access if needed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetArchiveDecryptionPassword(string jsonOrUrn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">jsonOrUrn</span></td>
+        <td><p>Whenever possible, the full asset JSON should be provided. The JSON will include all information to
+correctly find an asset. If only the URN is provided, the asset may not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The password requested in UTF-8.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With a <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryInternal">CategoryInternal</a> if the json provided is in an unrecognized format, or with
+<a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryNotFound">CategoryNotFound</a> if the password cannot be found. Other
+variations of the exception may be thrown as well.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetClusterServers_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetClusterServers*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetClusterServers" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetClusterServers">GetClusterServers()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; GetClusterServers()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetEntitlement_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetEntitlement*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetEntitlement_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetEntitlement(System.String,System.String)">GetEntitlement(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+string GetEntitlement([NotNull] string name, [CanBeNull] string defaultValue = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the entitlement.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The value for the entitlement of the given name, or the <code data-dev-comment-type="paramref" class="paramref">defaultValue</code> if the entitlement is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetManagedAesKey_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetManagedAesKey*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetManagedAesKey_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetManagedAesKey(System.String)">GetManagedAesKey(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+IManagedAesKey GetManagedAesKey([NotNull] string serialized)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">serialized</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.IManagedAesKey.html">IManagedAesKey</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryUpgrade">CategoryUpgrade</a> if the serialized content cannot be parsed. Also with
+other categories for other reasons.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetManagedAesKeys_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetManagedAesKeys*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetManagedAesKeys" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetManagedAesKeys">GetManagedAesKeys()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;ISingleAssetManager&gt; GetManagedAesKeys()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="PKWARE.Smartcrypt.MetaClient.ISingleAssetManager.html">ISingleAssetManager</a>&gt;</td>
+        <td><p>All managed keys. Each can be used for various purposes. Perform filtering before use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetNotifications_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetNotifications*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetNotifications" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetNotifications">GetNotifications()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISet&lt;Notification&gt; GetNotifications()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="PKWARE.Smartcrypt.MetaClient.Notification.html">Notification</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getPrefix_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getPrefix*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getPrefix" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getPrefix">getPrefix()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string getPrefix()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetPublicKey_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetPublicKey*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetPublicKey" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetPublicKey">GetPublicKey()</h4>
+  <div class="markdown level1 summary"><p>Returns the public key of the current user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+string GetPublicKey()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The public key of the current user. Will be <code>null</code> if the account has not been created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetSyncInterval_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetSyncInterval*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_GetSyncInterval" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.GetSyncInterval">GetSyncInterval()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TimeSpan GetSyncInterval()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getUserEmail_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getUserEmail*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getUserEmail" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getUserEmail">getUserEmail()</h4>
+  <div class="markdown level1 summary"><p>Gets the email address of the current user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+string getUserEmail()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The email address of the current user. Will be <code>null</code> if user information has not been synced.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getUserETag_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getUserETag*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getUserETag" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getUserETag">getUserETag()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int getUserETag()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getUserId_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getUserId*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getUserId" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getUserId">getUserId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long getUserId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getUserName_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getUserName*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getUserName" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getUserName">getUserName()</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the current user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+string getUserName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The name of the current user. Will be <code>null</code> if user information has not been synced or if the
+name is not known.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getUserURN_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getUserURN*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getUserURN" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getUserURN">getUserURN()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string getUserURN()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getXPIDs_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getXPIDs*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_getXPIDs" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.getXPIDs">getXPIDs()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IList&lt;KnownUser&gt; getXPIDs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="PKWARE.Smartcrypt.MetaClient.KnownUser.html">KnownUser</a>&gt;</td>
+        <td><p>All Smartcrypt users known to the user, excluding the representation of the current user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isAccountAllowed_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isAccountAllowed*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isAccountAllowed" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isAccountAllowed">isAccountAllowed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool isAccountAllowed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_IsAccountManaged_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.IsAccountManaged*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_IsAccountManaged_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.IsAccountManaged(System.String)">IsAccountManaged(String)</h4>
+  <div class="markdown level1 summary"><p>Query server and find out if this email is a managed account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsAccountManaged([NotNull] string email)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">email</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if the account is managed, otherwise <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>Primarily for network reasons, but could be others as well. Best to
+display to the user. With <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryMigrationRequired">CategoryMigrationRequired</a>
+ if needing to migrate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isAuthenticated_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isAuthenticated*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isAuthenticated" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isAuthenticated">isAuthenticated()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool isAuthenticated()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isDeviceAllowed_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isDeviceAllowed*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isDeviceAllowed" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isDeviceAllowed">isDeviceAllowed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool isDeviceAllowed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isLicensed_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isLicensed*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isLicensed" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isLicensed">isLicensed()</h4>
+  <div class="markdown level1 summary"><p>Will perform a network call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool isLicensed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if the current user is able to acquire a license; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isLoggedIn_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isLoggedIn*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isLoggedIn" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isLoggedIn">isLoggedIn()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool isLoggedIn()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isManagedAccount_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isManagedAccount*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isManagedAccount" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isManagedAccount">isManagedAccount()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool isManagedAccount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isOfflineAccessExpired_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isOfflineAccessExpired*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isOfflineAccessExpired" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isOfflineAccessExpired">isOfflineAccessExpired()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool isOfflineAccessExpired()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isRegistered_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isRegistered*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isRegistered" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isRegistered">isRegistered()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool isRegistered()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isSatellite_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isSatellite*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isSatellite" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.isSatellite">isSatellite()</h4>
+  <div class="markdown level1 summary"><p>Indicates whether or not this instance of MetaClient is communicating with a satellite MDS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool isSatellite()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if this instance is known to be communicating with a SMDS rather than a CMDS, otherwise
+<code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_isSatellite_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Prior to a call to <span class="xref">PKWARE.Smartcrypt.MetaClient.MetaState.CheckDomain(System.String)</span>, which happens during typical login flows or
+a restore from serialized state, this function is not guaranteed to be accurate.</p>
+</div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_Login_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.Login*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_Login_System_String_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.Login(System.String,System.String,System.String)">Login(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Attempts to log in the specified user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Login([NotNull] string email, [NotNull] string password, [CanBeNull] string oldPassword = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">email</span></td>
+        <td><p>The email address of the user. Must include the domain. Ex. <code>john@example.com</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The current password of the user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">oldPassword</span></td>
+        <td><p>The previous password of the user. This is not required, but is available for use
+by application that do not synchronize the SID <em>and</em> do not run in isolated mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_LoginImplicitAccount_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.LoginImplicitAccount*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_LoginImplicitAccount" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.LoginImplicitAccount">LoginImplicitAccount()</h4>
+  <div class="markdown level1 summary"><p>Performs a login using a system user. On Windows, the Windows user account owning this process is used. On
+Mac and Linux, the Kerberos user setup via <code>kinit</code> or a similar utility is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LoginImplicitAccount()</code></pre>
+  </div>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_LoginImplicitAccount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When this login method is used, <a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_Login_System_String_System_String_System_String_">Login(String, String, String)</a> and <a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_LoginManagedAccount_System_String_System_String_">LoginManagedAccount(String, String)</a> must not
+be used. Additionally, a custom server URL must be provided using <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClient.Builder.html#PKWARE_Smartcrypt_MetaClient_MetaClient_Builder_Server">Server</a>.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>For all sorts of reasons.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_LoginImplicitAccount_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_LoginManagedAccount_System_String_System_String_">LoginManagedAccount(String, String)</a></div>
+      <div><a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_Login_System_String_System_String_System_String_">Login(String, String, String)</a></div>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_LoginManagedAccount_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.LoginManagedAccount*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_LoginManagedAccount_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.LoginManagedAccount(System.String,System.String)">LoginManagedAccount(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LoginManagedAccount([NotNull] string emailWithHost, [NotNull] string accountPassword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">emailWithHost</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">accountPassword</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_LoginManagedAccountEncPass_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.LoginManagedAccountEncPass*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_LoginManagedAccountEncPass_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.LoginManagedAccountEncPass(System.String,System.String)">LoginManagedAccountEncPass(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LoginManagedAccountEncPass([NotNull] string emailWithHost, [NotNull] string encryptedAccountPassword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">emailWithHost</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">encryptedAccountPassword</span></td>
+        <td><p>The account password after going through <a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_EncryptAccountPassword_System_String_">EncryptAccountPassword(String)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_Logout_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.Logout*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_Logout" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.Logout">Logout()</h4>
+  <div class="markdown level1 summary"><p>Enables this instance to be used with another user. Information about the server(s) this instance was
+communicating with is retained.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Logout()</code></pre>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_lookupUsers_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.lookupUsers*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_lookupUsers_System_Collections_Generic_IList_System_String__" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.lookupUsers(System.Collections.Generic.IList{System.String})">lookupUsers(IList&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Asks the server for user information for the provided email addresses. Duplicates are collapsed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IList&lt;KnownUser&gt; lookupUsers(IList&lt;string&gt; emails)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">emails</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="PKWARE.Smartcrypt.MetaClient.KnownUser.html">KnownUser</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_migrate_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.migrate*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_migrate_System_String_System_String_System_String_System_Boolean_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.migrate(System.String,System.String,System.String,System.Boolean)">migrate(String, String, String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void migrate(string email, string password, string accountPassword, bool mfaExpected)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">email</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">accountPassword</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">mfaExpected</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_POST_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.POST*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_POST_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.POST(System.String,System.String)">POST(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string POST(string suffix, string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">suffix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ProcessIsolatedUpdate_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.ProcessIsolatedUpdate*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_ProcessIsolatedUpdate_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.ProcessIsolatedUpdate(System.String)">ProcessIsolatedUpdate(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ProcessIsolatedUpdate([NotNull] string blob)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">blob</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_RecoverPassword_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.RecoverPassword*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_RecoverPassword_System_String_System_Boolean_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.RecoverPassword(System.String,System.Boolean,System.String)">RecoverPassword(String, Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>The final step of the password recovery process for unmanaged users.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+string RecoverPassword([NotNull] string recoveryToken, bool mfaExpected, [CanBeNull] string recoveryCipher = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">recoveryToken</span></td>
+        <td><p>The recovery token sent to the user via email after initiating password recovery
+via <a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_RequestRecoveryEmail_System_String_">RequestRecoveryEmail(String)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">mfaExpected</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">recoveryCipher</span></td>
+        <td><p>The encrypted password. If empty, the value stored by MetaClient will be used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The recovered password.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_RecoverPassword_System_String_System_Boolean_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Only unmanaged users can recover their password. Managed users should be directed to their system
+administrator.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><inheritdoc cref="M:PKWARE.Smartcrypt.MetaClient.MetaClient.DoRecoverPassword(System.String,System.Boolean,System.String)"></inheritdoc></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_RecoverPassword_System_String_System_Boolean_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_CanRecoveryBePerformed">CanRecoveryBePerformed()</a></div>
+      <div><a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_RequestRecoveryEmail_System_String_">RequestRecoveryEmail(String)</a></div>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_RequestAccess_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.RequestAccess*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_RequestAccess_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.RequestAccess(System.String)">RequestAccess(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RequestAccess(string serialized)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">serialized</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With <a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryUpgrade">CategoryUpgrade</a> if the serialized content cannot be parsed. May also
+happen as a results of network problems and other reasons.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_requestEmailVerification_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.requestEmailVerification*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_requestEmailVerification" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.requestEmailVerification">requestEmailVerification()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void requestEmailVerification()</code></pre>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_RequestRecoveryEmail_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.RequestRecoveryEmail*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_RequestRecoveryEmail_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.RequestRecoveryEmail(System.String)">RequestRecoveryEmail(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RequestRecoveryEmail([NotNull] string email)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">email</span></td>
+        <td><p>If empty, the value from the <span class="xref">PKWARE.Smartcrypt.MetaClient.PID</span> will be used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_RespondToNotification_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.RespondToNotification*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_RespondToNotification_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.RespondToNotification(System.String,System.String)">RespondToNotification(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RespondToNotification([NotNull] string urn, [NotNull] string action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">urn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_RestoreAll_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.RestoreAll*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_RestoreAll_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.RestoreAll(System.Collections.Generic.IDictionary{System.String,System.String})">RestoreAll(IDictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RestoreAll([NotNull] IDictionary&lt;string, string&gt; serials)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">serials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>If the data being restored are invalid. Invalid means that there are a
+different number than expected or that any are different from when we last saw them.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_SaveAppData_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.SaveAppData*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_SaveAppData_System_String_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.SaveAppData(System.String,System.String,System.String)">SaveAppData(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SaveAppData(string kind, string name, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">kind</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_SerializeAll_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.SerializeAll*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_SerializeAll_System_Boolean_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.SerializeAll(System.Boolean)">SerializeAll(Boolean)</h4>
+  <div class="markdown level1 summary"><p>It is assumed that all data after this call are successfully transformed. If that is not the case, you must
+call <a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_changesWereNotSaved">changesWereNotSaved()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+IDictionary&lt;string, string&gt; SerializeAll(bool incremental = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">incremental</span></td>
+        <td><p>If <code>true</code>, only those data that have changed since the last serialization
+will be serialized. If <code>false</code> all data will be serialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>The serials to save/delete. Deletion is indicated by a map value of <code>null</code>. The values are
+always sorted by key in alphabetical order.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_SetServer_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.SetServer*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_SetServer_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.SetServer(System.String)">SetServer(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the new server to communicate with. This does not involve any network IO. Clears the MDS public key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetServer([NotNull] string url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The URL of the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_SetStat_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.SetStat*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_SetStat_System_String_System_String_System_Int64_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.SetStat(System.String,System.String,System.Int64)">SetStat(String, String, Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetStat(string kind, string qualifier, long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">kind</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">qualifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_shouldPersistCredentials_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.shouldPersistCredentials*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_shouldPersistCredentials" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.shouldPersistCredentials">shouldPersistCredentials()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool shouldPersistCredentials()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_Sign_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.Sign*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_Sign_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.Sign(System.String)">Sign(String)</h4>
+  <div class="markdown level1 summary"><p>Performs an RSA signature of the content, using the RSA private key of the logged-in identity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+string Sign([NotNull] string data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data to sign.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The signature with the <code>V2</code> prefix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_Sign_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.html#PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_Sign_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_Byte___System_String_">Sign(ICryptoProvider, Byte[], String)</a></div>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_SwitchToCentral_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.SwitchToCentral*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_SwitchToCentral_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.SwitchToCentral(System.String)">SwitchToCentral(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SwitchToCentral([NotNull] string prefix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">prefix</span></td>
+        <td><p>The base URL of the central server. For example, {@code https://vcs.pkware.com/mds}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_switchToDomain_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.switchToDomain*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_switchToDomain_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.switchToDomain(System.String)">switchToDomain(String)</h4>
+  <div class="markdown level1 summary"><p>May overwrite any previous information passed to <a class="xref" href="PKWARE.Smartcrypt.MetaClient.IMetaClient.html#PKWARE_Smartcrypt_MetaClient_IMetaClient_SwitchToCentral_System_String_">SwitchToCentral(String)</a>. Performs network IO.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool switchToDomain(string domainOrEmail)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">domainOrEmail</span></td>
+        <td><p>Domain name registered with CMDS or the email address of the current user, from
+which the domain will be deduced.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if now talking to a SMDS. Otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>Primarily for network reasons, but could be others as well. Best to
+display to the user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_sync_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.sync*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_sync" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.sync">sync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void sync()</code></pre>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_IMetaClient_WrapSessionKeyWithSmartkey_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.WrapSessionKeyWithSmartkey*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_IMetaClient_WrapSessionKeyWithSmartkey_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.IMetaClient.WrapSessionKeyWithSmartkey(System.String,System.String)">WrapSessionKeyWithSmartkey(String, String)</h4>
+  <div class="markdown level1 summary"><p>Wraps the session key for secure storage and future retrieval. Expands the existing session key to 256 bits
+and wraps it for secure storage and future retrieval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+EncryptionInfo WrapSessionKeyWithSmartkey([NotNull] string smartkeyUrn, [CanBeNull] string sessionKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">smartkeyUrn</span></td>
+        <td><p>Of a locally held key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sessionKey</span></td>
+        <td><p>If <code>null</code>, a new 256 bit session key is created, otherwise, the existing key
+is expanded to 256 bits.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.EncryptionInfo.html">EncryptionInfo</a></td>
+        <td><p>The session key and json document allowing key retrieval.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientSemanticEncryption.html#PKWARE_Smartcrypt_MetaClient_MetaClientSemanticEncryption_DecryptGroupKey_PKWARE_Smartcrypt_MetaClient_IMetaClient_System_String_">MetaClientSemanticEncryption.DecryptGroupKey(IMetaClient, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientSemanticEncryption.html#PKWARE_Smartcrypt_MetaClient_MetaClientSemanticEncryption_DecryptHybrid_PKWARE_Smartcrypt_MetaClient_IMetaClient_System_String_">MetaClientSemanticEncryption.DecryptHybrid(IMetaClient, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2018 PKWARE, Inc.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

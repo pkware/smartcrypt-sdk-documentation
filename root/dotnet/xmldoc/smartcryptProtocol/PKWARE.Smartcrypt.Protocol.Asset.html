@@ -1,0 +1,678 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Asset
+   | Smartcrypt SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Asset
+   | Smartcrypt SDK ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PKWARE.Smartcrypt.Protocol.Asset">
+  
+  
+  <h1 id="PKWARE_Smartcrypt_Protocol_Asset" data-uid="PKWARE.Smartcrypt.Protocol.Asset" class="text-break">Class Asset
+  </h1>
+  <div class="markdown level0 summary"><p>Assets are used to group all the related types that make up what we think of as a Smartkey, such as Features, Keys, and Rights. Assets are signed by the owner unless they have an &apos;object_kind&apos; of &apos;groupMaster&apos;.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="PKWARE.Smartcrypt.Protocol.BasePdu-1.html">BasePdu</a>&lt;<a class="xref" href="PKWARE.Smartcrypt.Protocol.Asset.html">Asset</a>&gt;</div>
+    <div class="level2"><span class="xref">Asset</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PKWARE.Smartcrypt.Protocol.Asset.html">Asset</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="PKWARE.Smartcrypt.Protocol.BasePdu-1.html#PKWARE_Smartcrypt_Protocol_BasePdu_1_ToJsonForMds">BasePdu&lt;Asset&gt;.ToJsonForMds()</a>
+    </div>
+    <div>
+      <a class="xref" href="PKWARE.Smartcrypt.Protocol.BasePdu-1.html#PKWARE_Smartcrypt_Protocol_BasePdu_1_ToJsonForLocalStorage">BasePdu&lt;Asset&gt;.ToJsonForLocalStorage()</a>
+    </div>
+    <div>
+      <a class="xref" href="PKWARE.Smartcrypt.Protocol.BasePdu-1.html#PKWARE_Smartcrypt_Protocol_BasePdu_1_Equals__0_">BasePdu&lt;Asset&gt;.Equals(Asset)</a>
+    </div>
+    <div>
+      <a class="xref" href="PKWARE.Smartcrypt.Protocol.BasePdu-1.html#PKWARE_Smartcrypt_Protocol_BasePdu_1_Equals_System_Object_">BasePdu&lt;Asset&gt;.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="PKWARE.Smartcrypt.Protocol.BasePdu-1.html#PKWARE_Smartcrypt_Protocol_BasePdu_1_GetHashCode">BasePdu&lt;Asset&gt;.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PKWARE.Smartcrypt.Protocol.html">PKWARE.Smartcrypt.Protocol</a></h6>
+  <h6><strong>Assembly</strong>: SmartcryptProtocol.dll</h6>
+  <h5 id="PKWARE_Smartcrypt_Protocol_Asset_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Asset : BasePdu&lt;Asset&gt;, IEquatable&lt;Asset&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_Asset__ctor_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.#ctor*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset__ctor_PKWARE_Smartcrypt_Protocol_Asset_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.#ctor(PKWARE.Smartcrypt.Protocol.Asset)">Asset(Asset)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Asset([NotNull] Asset other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.Asset.html">Asset</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_KindCommunity" data-uid="PKWARE.Smartcrypt.Protocol.Asset.KindCommunity">KindCommunity</h4>
+  <div class="markdown level1 summary"><p>Specific to Smartcrypt archive; owned by the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string KindCommunity = &quot;community&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_KindContingency" data-uid="PKWARE.Smartcrypt.Protocol.Asset.KindContingency">KindContingency</h4>
+  <div class="markdown level1 summary"><p>For contingency access to other asset keys.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string KindContingency = &quot;Contingency&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_KindGroupMaster" data-uid="PKWARE.Smartcrypt.Protocol.Asset.KindGroupMaster">KindGroupMaster</h4>
+  <div class="markdown level1 summary"><p>Specific to Active Directory groups. Each AD group gets it&apos;s own identity. The associated Asset Key has a unique format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string KindGroupMaster = &quot;groupMaster&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_KindPrefixSdk" data-uid="PKWARE.Smartcrypt.Protocol.Asset.KindPrefixSdk">KindPrefixSdk</h4>
+  <div class="markdown level1 summary"><p>Specific to all SDK applications; can be owned by the server or the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string KindPrefixSdk = &quot;sdk_&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_KindPriv" data-uid="PKWARE.Smartcrypt.Protocol.Asset.KindPriv">KindPriv</h4>
+  <div class="markdown level1 summary"><p>The default asset for every account. A new <code>priv</code> Asset is created by the client every time a user&apos;s CA changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string KindPriv = &quot;priv&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_KindSmartcrypt" data-uid="PKWARE.Smartcrypt.Protocol.Asset.KindSmartcrypt">KindSmartcrypt</h4>
+  <div class="markdown level1 summary"><p>Specific to Smartcrypt archive; owned by the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string KindSmartcrypt = &quot;smartcrypt&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_KindTde" data-uid="PKWARE.Smartcrypt.Protocol.Asset.KindTde">KindTde</h4>
+  <div class="markdown level1 summary"><p>Unique to Smartcrypt TDE; owned by the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string KindTde = &quot;TDEKey&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_record" data-uid="PKWARE.Smartcrypt.Protocol.Asset.record">record</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NotNull]
+public readonly Asset.Record record</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.Asset.Record.html">Asset.Record</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_Asset_created_at_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.created_at*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_created_at" data-uid="PKWARE.Smartcrypt.Protocol.Asset.created_at">created_at</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string created_at { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_Asset_homeServer_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.homeServer*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_homeServer" data-uid="PKWARE.Smartcrypt.Protocol.Asset.homeServer">homeServer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string homeServer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_Asset_id_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.id*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_id" data-uid="PKWARE.Smartcrypt.Protocol.Asset.id">id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_Asset_keyDestruction_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.keyDestruction*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_keyDestruction" data-uid="PKWARE.Smartcrypt.Protocol.Asset.keyDestruction">keyDestruction</h4>
+  <div class="markdown level1 summary"><p>TODO Inline the docs from <a href="https://confluence.pkware.com/display/SPE/Smartcrypt+Key+Life+Cycle">https://confluence.pkware.com/display/SPE/Smartcrypt+Key+Life+Cycle</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int keyDestruction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_Asset_keyRetirement_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.keyRetirement*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_keyRetirement" data-uid="PKWARE.Smartcrypt.Protocol.Asset.keyRetirement">keyRetirement</h4>
+  <div class="markdown level1 summary"><p>TODO Inline the docs from <a href="https://confluence.pkware.com/display/SPE/Smartcrypt+Key+Life+Cycle">https://confluence.pkware.com/display/SPE/Smartcrypt+Key+Life+Cycle</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int keyRetirement { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_Asset_keyRotation_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.keyRotation*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_keyRotation" data-uid="PKWARE.Smartcrypt.Protocol.Asset.keyRotation">keyRotation</h4>
+  <div class="markdown level1 summary"><p>TODO Inline the docs from <a href="https://confluence.pkware.com/display/SPE/Smartcrypt+Key+Life+Cycle">https://confluence.pkware.com/display/SPE/Smartcrypt+Key+Life+Cycle</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int keyRotation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_Asset_ownerid_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.ownerid*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_ownerid" data-uid="PKWARE.Smartcrypt.Protocol.Asset.ownerid">ownerid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ownerid { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_Asset_signature_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.signature*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_signature" data-uid="PKWARE.Smartcrypt.Protocol.Asset.signature">signature</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string signature { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_Asset_updated_at_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.updated_at*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_updated_at" data-uid="PKWARE.Smartcrypt.Protocol.Asset.updated_at">updated_at</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string updated_at { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_Asset_ToJson_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.ToJson*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_Asset_ToJson_System_Boolean_" data-uid="PKWARE.Smartcrypt.Protocol.Asset.ToJson(System.Boolean)">ToJson(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string ToJson(bool sending)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">sending</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">PKWARE.Smartcrypt.Protocol.BasePdu&lt;PKWARE.Smartcrypt.Protocol.Asset&gt;.ToJson(System.Boolean)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2018 PKWARE, Inc.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

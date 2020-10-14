@@ -1,0 +1,6 @@
+com.pkware.smartcrypt.keymanagement
+com.pkware.smartcrypt.keymanagement.smartkeys
+com.pkware.smartcrypt.metaclient
+com.pkware.smartcrypt.protocol
+com.pkware.smartcrypt.structured
+com.pkware.smartcrypt.unstructured

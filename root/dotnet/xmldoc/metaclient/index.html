@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Smartcrypt MetaClient | Smartcrypt SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Smartcrypt MetaClient | Smartcrypt SDK ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="metaclient_index">
+<h1 id="smartcrypt-metaclient">Smartcrypt MetaClient</h1>
+
+<p>MetaClient is the core library that communicates between the application and the Smartcrypt Enterprise Manager.
+MetaClient exposes an API that works well for procedural applications such as command line utilities, but is challenging
+to use for large applications like web apps. For most enterprise workloads, we suggest using the
+<a class="xref" href="../keyManagement/index.html">Key Management</a>, <a class="xref" href="../structuredData/index.html">Structured Data</a>, and
+<a class="xref" href="../unstructuredData/index.html">Unstructured Data</a> components.</p>
+<div class="CAUTION"><h5>Caution</h5><p>While the code in this package is stable, the APIs are still considered <code>beta</code> and are subject to change. If using
+classes or methods from this package, expect them to break and possibly disappear entirely in a future release.</p>
+</div>
+<h2 id="setup">Setup</h2>
+<p>To get started, you&#39;ll need a new instance of <code>IMetaClient</code>.</p>
+<pre><code class="lang-cs" name="Setup">
+public static IMetaClient SetUp() =&gt; new MetaClient.Builder
+{
+  AppName = &quot;&lt;Your application name&gt;&quot;, AppVersion = &quot;&lt;Your application version&gt;&quot;
+}.Build();
+
+</code></pre><h2 id="policy">Policy</h2>
+<p>Select parts of Smartcrypt PDE policy are accessible via the Smartcrypt SDK. Compliance with policy is automatic when
+your application runs as Smartcrypt.</p>
+<h3 id="running-as-smartcrypt">Running as Smartcrypt</h3>
+<p>To run your application as Smartcrypt, pass the
+<a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SiteData.html#PKWARE_Smartcrypt_Protocol_SiteData_ApplicationSmartcrypt">Smartcrypt application name</a> to the
+<a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClient.Builder.html#PKWARE_Smartcrypt_MetaClient_MetaClient_Builder_AppName">MetaClient builder</a>.</p>
+<h3 id="what-is-covered-by-policy">What is covered by policy</h3>
+<ul>
+<li>Contingency Groups - Encryption operations including a Smartkey and performed via the SDK are automatically protected
+via Contingency Groups.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2018 PKWARE, Inc.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
