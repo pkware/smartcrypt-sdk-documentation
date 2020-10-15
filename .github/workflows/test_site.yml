@@ -36,8 +36,7 @@ jobs:
         run: python3 -m pip install -r requirements.txt
 
       - name: Build Java site
-        working-directory: java
-        run: mkdocs build --site-dir ../root/java
+        run: mkdocs build -f mkdocs-java.yml
 
       - name: Test site
         working-directory: root

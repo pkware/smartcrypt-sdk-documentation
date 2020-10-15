@@ -60,9 +60,9 @@ There is no toggle to disable logging. Instead, set the [level][setter] to [ERRO
 
 You may want to change where messages are logged during the execution of your program. To do this, customize your `Logger` subclass to maintain the information of where, when, and how to log. This gives you full control over the structure, threading, and lifecycles of your application logging.
 
-[Logger]: /api/com/pkware/smartcrypt/metaclient/Logger.html
-[MetaClient Builder]: /api/com/pkware/smartcrypt/metaclient/NativeMetaClient.Builder.html#logger(com.pkware.smartcrypt.metaclient.Logger)
-[setter]: /api/com/pkware/smartcrypt/metaclient/Logger.html#setLevel-com.pkware.smartcrypt.metaclient.Logger.Level-
-[formatTag]: /api/com/pkware/smartcrypt/metaclient/Logger.html#formatTag--
-[ERROR]: /api/com/pkware/smartcrypt/metaclient/Logger.Level.html#ERROR
-[log]: /api/com/pkware/smartcrypt/metaclient/Logger.html#log-com.pkware.smartcrypt.metaclient.Logger.Level-java.lang.String-java.lang.String-java.lang.Throwable-
+[Logger]: ../../api/com/pkware/smartcrypt/metaclient/Logger.html
+[MetaClient Builder]: ../../api/com/pkware/smartcrypt/metaclient/NativeMetaClient.Builder.html#logger(com.pkware.smartcrypt.metaclient.Logger)
+[setter]: ../../api/com/pkware/smartcrypt/metaclient/Logger.html#setLevel-com.pkware.smartcrypt.metaclient.Logger.Level-
+[formatTag]: ../../api/com/pkware/smartcrypt/metaclient/Logger.html#formatTag--
+[ERROR]: ../../api/com/pkware/smartcrypt/metaclient/Logger.Level.html#ERROR
+[log]: ../../api/com/pkware/smartcrypt/metaclient/Logger.html#log-com.pkware.smartcrypt.metaclient.Logger.Level-java.lang.String-java.lang.String-java.lang.Throwable-

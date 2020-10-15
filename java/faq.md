@@ -42,5 +42,5 @@ be sure to read the [FLPE docs] before proceeding.
 It's possible that the Application you are using does not have a mapping for the Smartkey `Kind`. See the
 [PKWARE Enterprise Manager Documentation] for configuration details.
 
-[FLPE docs]: /concepts/flpe
+[FLPE docs]: ../concepts/flpe
 [PKWARE Enterprise Manager Documentation]: https://support.pkware.com/home/smar/latest/sem-reference/8-sdk/applications

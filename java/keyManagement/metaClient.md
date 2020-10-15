@@ -50,4 +50,4 @@ all operations to use that one instance. Using multiple instances will not cause
 more network traffic, since the data won't be cached locally.
 
 
-[SmartcryptKeyManagement]: /api/index.html?com/pkware/smartcrypt/keymanagement/SmartcryptKeyManagement.html
+[SmartcryptKeyManagement]: ../../api/index.html?com/pkware/smartcrypt/keymanagement/SmartcryptKeyManagement.html

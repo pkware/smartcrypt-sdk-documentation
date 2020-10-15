@@ -2,7 +2,11 @@ site_name: Smartcrypt Java SDK
 site_url: https://sdk.smartcrypt.com/java
 site_description: "Smartcrypt SDK for Java"
 site_author: PKWARE, Inc.
+repo_url: https://github.com/pkware/smartcrypt-sdk-documentation/
+edit_uri: edit/main/java/
 remote_branch: gh-pages
+docs_dir: java
+site_dir: root/java
 
 copyright: 'Copyright &copy; 2020 PKWARE, Inc.'
 

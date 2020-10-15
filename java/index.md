@@ -7,5 +7,5 @@ The [file encryption component] protects files by creating encrypted ZIP files.
 ## Key management
 The [key management component] facilitates retrieving, modifying, and issueing Smartkeys.
 
-[file encryption component]: /fileEncryption
-[key management component]: /keyManagement
+[file encryption component]: fileEncryption
+[key management component]: keyManagement

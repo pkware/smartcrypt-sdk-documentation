@@ -318,6 +318,6 @@ have access to the Smartkey, but are part of the Contingency Group, this snippet
     }
     ```
 
-[UnstructuredData]: /api/index.html?com/pkware/smartcrypt/unstructured/UnstructuredData.html
-[MetaClient]: /keyManagement/metaClient
-[Key Management docs]: /keyManagement/#create-smartkey
+[UnstructuredData]: ..//api/index.html?com/pkware/smartcrypt/unstructured/UnstructuredData.html
+[MetaClient]: ../keyManagement/metaClient
+[Key Management docs]: ../keyManagement/#create-smartkey
