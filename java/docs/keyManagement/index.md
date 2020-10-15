@@ -437,7 +437,7 @@ Once your `PersistenceCallback` is configured, you must modify your application 
     }
     ```
 
-[MetaClient#loginImplicitAccount()]: api/com/pkware/smartcrypt/metaclient/MetaClient.html#loginImplicitAccount()
-[Logger]: api/com/pkware/smartcrypt/metaclient/Logger.html
+[MetaClient#loginImplicitAccount()]: /api/com/pkware/smartcrypt/metaclient/MetaClient.html#loginImplicitAccount()
+[Logger]: /api/com/pkware/smartcrypt/metaclient/Logger.html
 [kinit]: https://web.mit.edu/kerberos/krb5-latest/doc/user/user_commands/kinit.html
-[PersistenceCallback]: api/index.html?com/pkware/smartcrypt/keymanagement/PersistenceCallback.html
+[PersistenceCallback]: /api/index.html?com/pkware/smartcrypt/keymanagement/PersistenceCallback.html

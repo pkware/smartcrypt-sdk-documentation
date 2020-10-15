@@ -44,6 +44,6 @@ To configure the SDK, provide the name of your custom application when you [tell
 Manager configuration is required when using this setup. Have a PKWARE Enterprise Manager admin follow the [PKWARE Enterprise Manager SDK Applications][server-sdk-application] instructions to get going. Be sure to provide the same application name as you are providing the SDK.
 
 
-[Builder#appName]: api/com/pkware/smartcrypt/metaclient/NativeMetaClient.Builder.html#appName-java.lang.String-
-[SiteData#smartcrypt]: api/com/pkware/smartcrypt/protocol/SiteData.html#APPLICATION_SMARTCRYPT
+[Builder#appName]: /api/com/pkware/smartcrypt/metaclient/NativeMetaClient.Builder.html#appName-java.lang.String-
+[SiteData#smartcrypt]: /api/com/pkware/smartcrypt/protocol/SiteData.html#APPLICATION_SMARTCRYPT
 [server-sdk-application]: https://support.pkware.com/home/smar/latest/sem-reference/8-sdk/applications

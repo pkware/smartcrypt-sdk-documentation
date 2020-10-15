@@ -35,9 +35,12 @@ also be initiated for other reasons. Most Smartkeys are, and most scenarios want
 
 There are certain scenarios, such as Format and Length Preserving Encryption, where key rotation is not acceptable. For
 such scenarios, non-rotatable Smartkeys exist. Skipping key rotation weakens the long-term security of a Smartkey, so
-be sure to read the [FLPE docs](/flpe) before proceeding.
+be sure to read the [FLPE docs] before proceeding.
 
 ## Why are my Smartkeys not syncing to my client?
 
 It's possible that the Application you are using does not have a mapping for the Smartkey `Kind`. See the
-[PKWARE Enterprise Manager Configuration](/manager#setting-up-an-application) page for configuration details.
+[PKWARE Enterprise Manager Documentation] for configuration details.
+
+[FLPE docs]: /concepts/flpe
+[PKWARE Enterprise Manager Documentation]: https://support.pkware.com/home/smar/latest/sem-reference/8-sdk/applications

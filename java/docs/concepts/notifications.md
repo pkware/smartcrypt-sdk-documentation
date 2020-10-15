@@ -8,6 +8,6 @@ Some Notifications require a response. For example, when another user requests a
 ## Technical details
 For technical information about the types of Notifications and their priorities, see subclasses of [Notification] and [NotificationPriority].
 
-[respondToNotification]: api/com/pkware/smartcrypt/keymanagement/DataStorage.html#respondToNotification-com.pkware.smartcrypt.metaclient.Notification-java.lang.String-
-[Notification]: api/com/pkware/smartcrypt/metaclient/Notification.html
-[NotificationPriority]: api/com/pkware/smartcrypt/metaclient/NotificationPriority.html
+[respondToNotification]: /api/com/pkware/smartcrypt/keymanagement/DataStorage.html#respondToNotification-com.pkware.smartcrypt.metaclient.Notification-java.lang.String-
+[Notification]: /api/com/pkware/smartcrypt/metaclient/Notification.html
+[NotificationPriority]: /api/com/pkware/smartcrypt/metaclient/NotificationPriority.html
