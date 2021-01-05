@@ -1,0 +1,695 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SingleAssetManager
+   | Smartcrypt SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SingleAssetManager
+   | Smartcrypt SDK ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager">
+  
+  
+  <h1 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager" class="text-break">Class SingleAssetManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">SingleAssetManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="PKWARE.Smartcrypt.MetaClient.ISingleAssetManager.html">ISingleAssetManager</a></div>
+    <div><a class="xref" href="PKWARE.Smartcrypt.MetaClient.IManagedAesKey.html">IManagedAesKey</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PKWARE.Smartcrypt.MetaClient.html">PKWARE.Smartcrypt.MetaClient</a></h6>
+  <h6><strong>Assembly</strong>: MetaClient.dll</h6>
+  <h5 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SingleAssetManager : ISingleAssetManager, IManagedAesKey</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_CanManage_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.CanManage*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_CanManage" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.CanManage">CanManage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanManage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Cookie_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Cookie*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Cookie" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Cookie">Cookie</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Cookie { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_DecryptionError_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.DecryptionError*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_DecryptionError" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.DecryptionError">DecryptionError</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetaClientException DecryptionError { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_EncryptionError_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.EncryptionError*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_EncryptionError" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.EncryptionError">EncryptionError</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetaClientException EncryptionError { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Features_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Features*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Features" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Features">Features</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;Feature&gt; Features { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="PKWARE.Smartcrypt.MetaClient.Feature.html">Feature</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_HomeServer_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.HomeServer*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_HomeServer" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.HomeServer">HomeServer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HomeServer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Keys_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Keys*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Keys" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Keys">Keys</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;int, ManagedKey&gt; Keys { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="PKWARE.Smartcrypt.MetaClient.ManagedKey.html">ManagedKey</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Kind_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Kind*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Kind" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Kind">Kind</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Kind { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Name_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Name*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Name" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Participants_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Participants*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Participants" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Participants">Participants</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;KnownUser&gt; Participants { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="PKWARE.Smartcrypt.MetaClient.KnownUser.html">KnownUser</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Urn_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Urn*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_Urn" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.Urn">Urn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Urn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_AllowAccess_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.AllowAccess*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_AllowAccess_System_Collections_Generic_IEnumerable_System_String__" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.AllowAccess(System.Collections.Generic.IEnumerable{System.String})">AllowAccess(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AllowAccess(IEnumerable&lt;string&gt; emails)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">emails</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_AllowAccess_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.AllowAccess*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_AllowAccess_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.AllowAccess(System.String)">AllowAccess(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AllowAccess(string email)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">email</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_ChangeName_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.ChangeName*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_ChangeName_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.ChangeName(System.String)">ChangeName(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_CreateKind_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.CreateKind*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_CreateKind_System_String_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.CreateKind(System.String,System.String,System.String)">CreateKind(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateKind(string kind, string name, string cookie = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">kind</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">cookie</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_RevokeAccess_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.RevokeAccess*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_RevokeAccess_System_Collections_Generic_IEnumerable_System_String__" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.RevokeAccess(System.Collections.Generic.IEnumerable{System.String})">RevokeAccess(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RevokeAccess(IEnumerable&lt;string&gt; emails)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">emails</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_RevokeAccess_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.RevokeAccess*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_RevokeAccess_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.RevokeAccess(System.String)">RevokeAccess(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RevokeAccess(string email)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">email</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_SetAssetFeature_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.SetAssetFeature*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_SetAssetFeature_System_String_System_String_System_String_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.SetAssetFeature(System.String,System.String,System.String,System.String)">SetAssetFeature(String, String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAssetFeature(string name, string compatibility, string value = null, string scope = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">compatibility</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_WrapSessionKey_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.WrapSessionKey*"></a>
+  <h4 id="PKWARE_Smartcrypt_MetaClient_SingleAssetManager_WrapSessionKey_System_String_" data-uid="PKWARE.Smartcrypt.MetaClient.SingleAssetManager.WrapSessionKey(System.String)">WrapSessionKey(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EncryptionInfo WrapSessionKey(string sessionKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sessionKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.EncryptionInfo.html">EncryptionInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="PKWARE.Smartcrypt.MetaClient.ISingleAssetManager.html">ISingleAssetManager</a>
+  </div>
+  <div>
+      <a class="xref" href="PKWARE.Smartcrypt.MetaClient.IManagedAesKey.html">IManagedAesKey</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2018 PKWARE, Inc.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
