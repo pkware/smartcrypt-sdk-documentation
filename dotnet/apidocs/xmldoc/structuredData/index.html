@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Smartcrypt Structured Data | Smartcrypt SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Smartcrypt Structured Data | Smartcrypt SDK ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="structured_data_index">
+<h1 id="smartcrypt-structured-data">Smartcrypt Structured Data</h1>
+
+<p>The Smartcrypt Structured Data component is particularly useful when encrypting data stored in a structured container such as in a JSON property or a database column. The component makes it easy to work with specific types of data and offers the ability to store encryption key information with minimal cipher text size increases.</p>
+<p>There are 3 specific encryption offerings for structured data: authenticated, length preserving, and format preserving. For most use cases, authenticated encryption is the best option; unless you have specific needs requiring other types of encryption, use authenticated.</p>
+<h2 id="authenticated-encryption">Authenticated Encryption</h2>
+<p>Authenticated encryption uses AES-GCM. When using authenticated encryption, not only is your data encrypted, but its authenticity is validated during decryption, making it impossible for the cipher text to be tampered with undetected. The SDK takes care of correctly generating nonce values.</p>
+<pre><code class="lang-csharp">var metaClient = new MetaClient.Builder
+{
+    AppName = nameof(AuthenticatedEncryptionSample),
+    AppVersion = &quot;1.0.0&quot;
+}.Build();
+var keyManagement = new SmartcryptKeyManagement.Builder()
+    .MetaClient(metaClient)
+    .PersistenceCallback(new InMemoryPersistenceCallback())
+    .Build();
+
+var accountManagement = keyManagement.AccountManagement();
+accountManagement.LoginManagedAccount(&quot;&lt;your username&gt;&quot;, &quot;&lt;your password&gt;&quot;);
+
+var smartkeys = keyManagement.Smartkeys();
+var smartkey = smartkeys.ListAll()
+    .Select(set =&gt; set.FirstOrDefault(key =&gt;
+        key is PrivateSmartkey
+        &amp;&amp; key.CanEncrypt
+        &amp;&amp; key.CanDecrypt)
+    )
+    .Where(key =&gt; key != null);
+
+var smartcryptStructuredData = new SmartcryptStructuredData.Builder()
+    .DataStorage(keyManagement.DataStorage())
+    .Build();
+
+var ae = smartcryptStructuredData.NewAuthenticatedEncryption(smartkey);
+var encrypted = ae.Encrypt(&quot;Hello, world!&quot;.Utf8());
+
+// Be sure to save all the information returned from Encrypt
+Console.WriteLine($&quot;Nonce: {encrypted.Nonce}&quot;);
+Console.WriteLine($&quot;Key revision: {encrypted.KeyRevision}&quot;);
+Console.WriteLine($&quot;Ciphertext in Base64: {encrypted.EncryptedContent.Base64()}&quot;);
+
+var decrypted = ae.Decrypt(encrypted.EncryptedContent, encrypted.Nonce, encrypted.KeyRevision);
+Console.WriteLine($&quot;Decrypted message: {decrypted.Utf8()}&quot;);
+</code></pre><h2 id="length-preserving-encryption">Length Preserving Encryption</h2>
+<p>Length preserving encryption produces a cipher text that has the same number of bytes as the input text. This is useful if you do not have control over the size of the cipher text storage container such as the size of the database column. However, there are <a href="https://sdk.smartcrypt.com/csharp/flpe.html">risks to using length preserving encryption</a>.</p>
+<p>Note that length preserving encryption in C# cannot be used with .NET Core projects.</p>
+<h2 id="format-preserving-encryption">Format Preserving Encryption</h2>
+<p>Format preserving encryption produces cipher text in the same format as the plain text. For example, if encrypting credit card numbers, the cipher text for each encryption will still be in the format of a valid credit card number. For some input types such as credit cards and social security numbers, the cipher text will still pass relevant checksum tests such as the Luhn check.</p>
+<p>Format preserving encryption is useful if you do not have control over the size of the cipher text storage container such as the size of the database column. However, there are <a href="https://sdk.smartcrypt.com/csharp/flpe.html">risks to using format preserving encryption</a>.</p>
+<p>Note that format preserving encryption cannot be used with .NET Core projects.</p>
+<pre><code class="lang-csharp">var metaClient = new MetaClient.Builder
+{
+    AppName = nameof(FormatPreservingEncryptionSample),
+    AppVersion = &quot;1.0.0&quot;
+}.Build();
+var keyManagement = new SmartcryptKeyManagement.Builder()
+    .MetaClient(metaClient)
+    .PersistenceCallback(new InMemoryPersistenceCallback())
+    .Build();
+
+var accountManagement = smartcryptKeyManagement.AccountManagement();
+accountManagement.LoginManagedAccount(&quot;&lt;your username&gt;&quot;, &quot;&lt;your password&gt;&quot;);
+
+var smartkeys = smartcryptKeyManagement.Smartkeys();
+var smartkey = smartkeys.ListAll()
+    .Select(keys =&gt; keys.FirstOrDefault(key =&gt;
+        key.Features.Any(feature =&gt; Feature.NameNonRotatable == feature.Name)
+        &amp;&amp; key.CanEncrypt
+        &amp;&amp; key.CanDecrypt)
+    )
+    .Where(key =&gt; key != null);
+
+var smartcryptStructuredData = new SmartcryptStructuredData.Builder()
+    .DataStorage(smartcryptKeyManagement.DataStorage())
+    .Build();
+
+var fpe = smartcryptStructuredData.NewFormatPreservingEncryption(smartkey);
+var encrypted1 = fpe.EncryptAlphanumeric(&quot;Hello, world!&quot;, &quot;1&quot;);
+var encrypted2 = fpe.EncryptAlphanumeric(&quot;Hello, world!&quot;, &quot;1&quot;);
+var encrypted3 = fpe.EncryptAlphanumeric(&quot;Hello, world!&quot;, &quot;2&quot;);
+Console.WriteLine($&quot;The tweak is important! Encrypted1: {encrypted1}, Encrypted2: {encrypted2}, Encrypted3: {encrypted3}&quot;);
+
+var decrypted1 = fpe.DecryptAlphanumeric(encrypted1, &quot;1&quot;);
+var decrypted2 = fpe.DecryptAlphanumeric(encrypted2, &quot;2&quot;);
+var decrypted3 = fpe.DecryptAlphanumeric(encrypted3, &quot;2&quot;);
+Console.WriteLine($&quot;The tweak is important! Decrypted1: {decrypted1}, Decrypted2: {decrypted2}, Decrypted3: {decrypted3}&quot;);
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2018 PKWARE, Inc.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

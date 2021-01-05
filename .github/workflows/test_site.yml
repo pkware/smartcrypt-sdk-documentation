@@ -28,15 +28,21 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ${{ steps.pip-cache.outputs.dir }}
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt', '**/requirements-sphinx.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      - name: Install dependencies
+      - name: Install Mkdocs dependencies
         run: python3 -m pip install -r requirements.txt
 
       - name: Build Java site
         run: mkdocs build -f mkdocs-java.yml
+
+      - name: Install Sphinx dependencies
+        run: python3 -m pip install -r requirements-sphinx.txt
+
+      - name: Build .NET site
+        run: sphinx-build -b html -t csharp dotnet/ root/dotnet
 
       - name: Test site
         working-directory: root

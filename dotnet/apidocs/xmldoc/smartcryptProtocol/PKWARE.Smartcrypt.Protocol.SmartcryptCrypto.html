@@ -1,0 +1,1177 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SmartcryptCrypto
+   | Smartcrypt SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SmartcryptCrypto
+   | Smartcrypt SDK ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto">
+  
+  
+  <h1 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto" class="text-break">Class SmartcryptCrypto
+  </h1>
+  <div class="markdown level0 summary"><p>Extension methods for <a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a> that make it much easier to implement the Smartcrypt
+Protocol.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">SmartcryptCrypto</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PKWARE.Smartcrypt.Protocol.html">PKWARE.Smartcrypt.Protocol</a></h6>
+  <h6><strong>Assembly</strong>: SmartcryptProtocol.dll</h6>
+  <h5 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SmartcryptCrypto</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_AesKeySize" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.AesKeySize">AesKeySize</h4>
+  <div class="markdown level1 summary"><p>The size, in bytes, of AES keys used by Smartcrypt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int AesKeySize = 32</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV2_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.DecryptV2*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV2_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte___" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.DecryptV2(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.String,System.Byte[])">DecryptV2(ICryptoProvider, String, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static byte[] DecryptV2(this ICryptoProvider cryptoProvider, string cipherText, byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">cipherText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryUpgrade">CategoryUpgrade</a> if the data are newer than understood by this software.
+With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryInternal">CategoryInternal</a> if the
+data are in an invalid format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV3_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.DecryptV3*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV3_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte___" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.DecryptV3(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.String,System.Byte[])">DecryptV3(ICryptoProvider, String, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static byte[] DecryptV3(this ICryptoProvider cryptoProvider, string cipherText, byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">cipherText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryUpgrade">CategoryUpgrade</a> if the data are newer than understood by this software.
+With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryInternal">CategoryInternal</a> if the
+data are in an invalid format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV4_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.DecryptV4*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV4_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte___" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.DecryptV4(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.String,System.Byte[])">DecryptV4(ICryptoProvider, String, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+[NotNull]
+public static byte[] DecryptV4(this ICryptoProvider cryptoProvider, string cipherText, byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">cipherText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>AES key. Will be adujsted to the correct length.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryUpgrade">CategoryUpgrade</a> if the data are newer than understood by this software.
+With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryInternal">CategoryInternal</a> if the
+data are in an invalid format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV5_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.DecryptV5*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV5_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte___" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.DecryptV5(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.String,System.Byte[])">DecryptV5(ICryptoProvider, String, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static byte[] DecryptV5(this ICryptoProvider cryptoProvider, string cipherText, byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">cipherText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryUpgrade">CategoryUpgrade</a> if the data are newer than understood by this software.
+With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryInternal">CategoryInternal</a> if the
+data are in an invalid format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV6_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.DecryptV6*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV6_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte___" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.DecryptV6(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.String,System.Byte[])">DecryptV6(ICryptoProvider, String, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static byte[] DecryptV6(this ICryptoProvider cryptoProvider, string cipherText, byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">cipherText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryUpgrade">CategoryUpgrade</a> if the data are newer than understood by this software.
+With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryInternal">CategoryInternal</a> if the
+data are in an invalid format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV7_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.DecryptV7*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV7_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte___" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.DecryptV7(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.String,System.Byte[])">DecryptV7(ICryptoProvider, String, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Decrypts using AES V7 encryption, given the cipher text and a key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static string DecryptV7(this ICryptoProvider cryptoProvider, string cipherText, byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">cipherText</span></td>
+        <td><p>A string with a V7 prefix, followed by a hexadecimal 16
+byte initalization vector, and then the encrypted text.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key used for decryption.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The string that was originally encrypted into the cipher text.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryUpgrade">CategoryUpgrade</a> if the data are newer than understood by this software.
+With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryInternal">CategoryInternal</a> if the
+data are in an invalid format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV7_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte____seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.html#PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV7_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte___">EncryptV7(ICryptoProvider, String, Byte[])</a></div>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV2_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.EncryptV2*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV2_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_Byte___System_String_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.EncryptV2(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.Byte[],System.String)">EncryptV2(ICryptoProvider, Byte[], String)</h4>
+  <div class="markdown level1 summary"><p>RSA encryption. Ciphertext is Base64 encoded and gets the V2 prefix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+[NotNull]
+public static string EncryptV2([NotNull] this ICryptoProvider cryptoProvider, [NotNull] byte[] plainText, [NotNull] string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">plainText</span></td>
+        <td><p>The content to encrypt.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>An RSA public key Base64 encoded and with the V2 prefix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html">MetaClientException</a></td>
+        <td><p>With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of
+<a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryUpgrade">CategoryUpgrade</a> if the data are newer than understood by this software.
+With <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_Category">Category</a> of <a class="xref" href="PKWARE.Smartcrypt.MetaClient.MetaClientException.html#PKWARE_Smartcrypt_MetaClient_MetaClientException_CategoryInternal">CategoryInternal</a> if the
+data are in an invalid format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV3_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.EncryptV3*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV3_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_Byte___System_Byte___System_Int32_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.EncryptV3(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.Byte[],System.Byte[],System.Int32)">EncryptV3(ICryptoProvider, Byte[], Byte[], Int32)</h4>
+  <div class="markdown level1 summary"><p>AES encryption of an AES key using a random IV and the provided AES key. No padding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static string EncryptV3(this ICryptoProvider cryptoProvider, byte[] plainText, byte[] key, int keySequence)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">plainText</span></td>
+        <td><p>A 32 byte raw AES key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The raw AES key of the user&apos;s highest <a class="xref" href="PKWARE.Smartcrypt.Protocol.Asset.html#PKWARE_Smartcrypt_Protocol_Asset_KindPriv">KindPriv</a> AssetKey.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">keySequence</span></td>
+        <td><p>The <a class="xref" href="PKWARE.Smartcrypt.Protocol.AssetKey.Record.html#PKWARE_Smartcrypt_Protocol_AssetKey_Record_keysequence">keysequence</a> of the user&apos;s highest
+<a class="xref" href="PKWARE.Smartcrypt.Protocol.Asset.html#PKWARE_Smartcrypt_Protocol_Asset_KindPriv">KindPriv</a> AssetKey.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV4_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.EncryptV4*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV4_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_Byte___System_Byte___" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.EncryptV4(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.Byte[],System.Byte[])">EncryptV4(ICryptoProvider, Byte[], Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+[NotNull]
+public static string EncryptV4(this ICryptoProvider cryptoProvider, [NotNull] byte[] plainText, [NotNull] byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">plainText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV5_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.EncryptV5*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV5_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_Byte___System_Byte___" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.EncryptV5(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.Byte[],System.Byte[])">EncryptV5(ICryptoProvider, Byte[], Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static string EncryptV5(this ICryptoProvider cryptoProvider, byte[] plainText, byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">plainText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV6_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.EncryptV6*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV6_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_Byte___System_Byte___" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.EncryptV6(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.Byte[],System.Byte[])">EncryptV6(ICryptoProvider, Byte[], Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static string EncryptV6(this ICryptoProvider cryptoProvider, byte[] plainText, byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">plainText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV7_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.EncryptV7*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV7_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte___" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.EncryptV7(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.String,System.Byte[])">EncryptV7(ICryptoProvider, String, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Encrypts a minimum 32 byte password using a provided key, which should come from an Asset.
+If the password is not at least 32 bytes, it should be padded with null characters before
+calling this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static string EncryptV7(this ICryptoProvider cryptoProvider, string password, byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The 32 byte or more null-padded password.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key coming from an AssetKey.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A string representing the V7 encryption tactic.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_EncryptV7_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte____seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.html#PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_DecryptV7_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_Byte___">DecryptV7(ICryptoProvider, String, Byte[])</a></div>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_GenerateKeyFromPassword_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.GenerateKeyFromPassword*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_GenerateKeyFromPassword_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_String_System_String_System_Int32_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.GenerateKeyFromPassword(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.String,System.String,System.Int32)">GenerateKeyFromPassword(ICryptoProvider, String, String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static byte[] GenerateKeyFromPassword(this ICryptoProvider cryptoProvider, string password, string salt, int iterations)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">salt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iterations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_Sign_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.Sign*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_Sign_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_Byte___System_String_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.Sign(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.Byte[],System.String)">Sign(ICryptoProvider, Byte[], String)</h4>
+  <div class="markdown level1 summary"><p>Performs an RSA signature of the content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static string Sign(this ICryptoProvider cryptoProvider, byte[] key, string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td><p>The <a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a> to use for cryptographic primitives.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The RSA private key to use for signing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The data to sign.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The signature with the <code>V2</code> prefix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_Sign_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_Byte___System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.html#PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_VerifySignature_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_Byte___System_String_System_String_">VerifySignature(ICryptoProvider, Byte[], String, String)</a></div>
+  </div>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_VerifySignature_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.VerifySignature*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_VerifySignature_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_Byte___System_String_System_String_" data-uid="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.VerifySignature(PKWARE.Smartcrypt.Protocol.ICryptoProvider,System.Byte[],System.String,System.String)">VerifySignature(ICryptoProvider, Byte[], String, String)</h4>
+  <div class="markdown level1 summary"><p>Verifies the integrity of data by checking the RSA signature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static bool VerifySignature(this ICryptoProvider cryptoProvider, [NotNull] byte[] rsaPublicKey, [NotNull] string data, [NotNull] string signature)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptoProvider</span></td>
+        <td><p>The provider to use for cryptographic primitives.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">rsaPublicKey</span></td>
+        <td><p>The RSA public key matching the private key used to sign the data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data that was signed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">signature</span></td>
+        <td><p>The RSA signature, with the version prefix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if the RSA signature checked out, otherwise <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_VerifySignature_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_Byte___System_String_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.html#PKWARE_Smartcrypt_Protocol_SmartcryptCrypto_Sign_PKWARE_Smartcrypt_Protocol_ICryptoProvider_System_Byte___System_String_">Sign(ICryptoProvider, Byte[], String)</a></div>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html">EncryptionTactic</a></div>
+      <div><a class="xref" href="PKWARE.Smartcrypt.Protocol.SemanticEncryption.html">SemanticEncryption</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2018 PKWARE, Inc.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
