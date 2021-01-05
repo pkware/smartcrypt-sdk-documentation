@@ -14,7 +14,6 @@ source path/to/virtual/environment/bin/activate
 # Install requirements if they have changed.
 pip install -r requirements.txt
 
-# cd to working directory
 mkdocs serve -f mkdocs-java.yml
 
 # If you changed dependencies, save them to requirements.

@@ -12,7 +12,6 @@ copyright: 'Copyright &copy; 2020 PKWARE, Inc.'
 
 theme:
   name: 'material'
-  # custom_dir: ../overrides
   favicon: images/smartcrypt.svg
   logo: images/smartcrypt.svg
   features:
