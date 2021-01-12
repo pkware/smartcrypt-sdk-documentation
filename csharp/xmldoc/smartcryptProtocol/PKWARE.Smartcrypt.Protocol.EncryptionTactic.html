@@ -1,0 +1,634 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EncryptionTactic
+   | Smartcrypt SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EncryptionTactic
+   | Smartcrypt SDK ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic">
+  
+  
+  <h1 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic" class="text-break">Class EncryptionTactic
+  </h1>
+  <div class="markdown level0 summary"><p><a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html">EncryptionTactic</a>s define the various formats that the Smartcrypt Protocol uses to encode
+information about ciphertexts, salts, keys, and other cryptographic parameters.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">EncryptionTactic</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html">EncryptionTactic</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PKWARE.Smartcrypt.Protocol.html">PKWARE.Smartcrypt.Protocol</a></h6>
+  <h6><strong>Assembly</strong>: SmartcryptProtocol.dll</h6>
+  <h5 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class EncryptionTactic : IEquatable&lt;EncryptionTactic&gt;</code></pre>
+  </div>
+  <h5 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The presence of a prefix matching an encryption tactic does not guarantee that the content is
+encrypted. The prefixes, commonly something like <code>V2</code> may be used for other purposes as well. Be aware of
+this when writing algorithms.</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V2" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.V2">V2</h4>
+  <div class="markdown level1 summary"><p>RSA encryption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly EncryptionTactic V2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html">EncryptionTactic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V2_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Given a plaintext <code>plain</code>, the final format will be <code>V2-base64(RSA_encrypt(plain))</code>.</p>
+</div>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V3" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.V3">V3</h4>
+  <div class="markdown level1 summary"><p>AES encryption of an AES key. Used for providing contingency access to asset keys.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly EncryptionTactic V3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html">EncryptionTactic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V3_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Given a plaintext <code>plain</code>, the final format will be
+<code>V3-key_sequence-base64(iv)-base64(AES_encrypt(plain))</code>. <code>plain</code> must be 32 bytes. The IV must be
+16 bytes. AES encryption must be performed without padding.</p>
+</div>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V4" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.V4">V4</h4>
+  <div class="markdown level1 summary"><p>AES encryption with a one-time key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly EncryptionTactic V4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html">EncryptionTactic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V4_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Given a plaintext <code>plain</code>, the final format will be <code>V4-base64(AES_encrypt(plain))</code>.
+A new, one-time use, 32 byte AES key is generated for this encryption. The IV is the first 16 bytes of the
+AES key.
+<p>
+Commonly, the <code>V4</code> tactic is used in conjunction with <a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html#PKWARE_Smartcrypt_Protocol_EncryptionTactic_V2">V2</a> as a form of hybrid
+encryption.</p>
+</div>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V5" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.V5">V5</h4>
+  <div class="markdown level1 summary"><p>AES encryption without padding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly EncryptionTactic V5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html">EncryptionTactic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V5_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Intended for general use encryption. The AES key is derived from the user&apos;s password using PBKDF2.
+Given a plaintext <code>plain</code>, the final format will be <code>V5-base64(iv)-base64(AES_encrypt(plain))</code>.
+The AES encryption must not use padding. The IV is a randomly generated 16 bytes.</p>
+</div>
+  <h5 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V5_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html#PKWARE_Smartcrypt_Protocol_EncryptionTactic_V6">V6</a></div>
+  </div>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V6" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.V6">V6</h4>
+  <div class="markdown level1 summary"><p>AES encryption with padding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly EncryptionTactic V6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html">EncryptionTactic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V6_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Intended for general use encryption. The AES key is derived from the user&apos;s password using PBKDF2.
+Given a plaintext <code>plain</code>, the final format will be <code>V6-base64(iv)-base64(AES_encrypt(plain))</code>.
+The AES encryption must use padding. The IV is a randomly generated 16 bytes.</p>
+</div>
+  <h5 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V6_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html#PKWARE_Smartcrypt_Protocol_EncryptionTactic_V5">V5</a></div>
+  </div>
+  
+  
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V7" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.V7">V7</h4>
+  <div class="markdown level1 summary"><p>AES encryption of a user-supplied password.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly EncryptionTactic V7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html">EncryptionTactic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_V7_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Given a plaintext <code>plain</code>, the final format will be <code>V7-hex(iv)hex(AES_encrypt(plain))</code>.
+The user-supplied password must be at least 32 byes long. If it is not, it must be padded with <code>NUL</code>
+characters to be 32 bytes long. The IV is a randomly generated 16 bytes. The AES encryption must use
+padding.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_ApplyPrefix_" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.ApplyPrefix*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_ApplyPrefix_System_String_" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.ApplyPrefix(System.String)">ApplyPrefix(String)</h4>
+  <div class="markdown level1 summary"><p>Prepends this tactic&apos;s prefix to the content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+[NotNull]
+public string ApplyPrefix([CanBeNull] string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The content to prepend the prefix to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The content with the prefix applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_Equals_" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.Equals*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_Equals_PKWARE_Smartcrypt_Protocol_EncryptionTactic_" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.Equals(PKWARE.Smartcrypt.Protocol.EncryptionTactic)">Equals(EncryptionTactic)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(EncryptionTactic other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionTactic.html">EncryptionTactic</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_Equals_" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.Equals*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_Equals_System_Object_" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a></div>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_GetHashCode_" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.GetHashCode*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_GetHashCode" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a></div>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_IsCompatible_" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.IsCompatible*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_IsCompatible_System_String_" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.IsCompatible(System.String)">IsCompatible(String)</h4>
+  <div class="markdown level1 summary"><p>Checks whether or not content is compatible with this tactic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public bool IsCompatible([NotNull] string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The content to check for compatibility.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if the <code data-dev-comment-type="paramref" class="paramref">value</code> starts with this tactic&apos;s prefix, otherwise
+<code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_StripPrefix_" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.StripPrefix*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_StripPrefix_System_String_" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.StripPrefix(System.String)">StripPrefix(String)</h4>
+  <div class="markdown level1 summary"><p>Removes this tactic&apos;s prefix from the content if it exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+[NotNull]
+public string StripPrefix([NotNull] string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The content from which to remove the prefix. Does not have to have the prefix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">value</code> without the prefix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_ToString_" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.ToString*"></a>
+  <h4 id="PKWARE_Smartcrypt_Protocol_EncryptionTactic_ToString" data-uid="PKWARE.Smartcrypt.Protocol.EncryptionTactic.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.html">SmartcryptCrypto</a></div>
+      <div><a class="xref" href="PKWARE.Smartcrypt.Protocol.EncryptionPurpose.html">EncryptionPurpose</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2018 PKWARE, Inc.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

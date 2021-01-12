@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Smartcrypt Unstructured Data | Smartcrypt SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Smartcrypt Unstructured Data | Smartcrypt SDK ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="unstructured_data_index">
+<h1 id="smartcrypt-unstructured-data">Smartcrypt Unstructured Data</h1>
+
+<p>The Smartcrypt Unstructured Data component is particularly useful when encrypting data stored in files and other
+unstructured containers. ZIP archives are used for compression and encryption. Accordingly, large data sets benefit from
+this component.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>You must have the PKArchive.NET DLL available already. If you installed the PKArchive Toolkit, the DLL will already be
+available to your project. Alternatively, copy it to your project repository and reference it that way.</p>
+<h2 id="setup">Setup</h2>
+<p>To get started, you&#39;ll need a new instance of <code>IUnstructuredData</code>. See the <a class="xref" href="../metaclient/index.html#setup">MetaClient</a>
+docs for details on how to obtain that instance.</p>
+<pre><code class="lang-cs" name="Setup">
+public static IUnstructuredData SetUp(IMetaClient metaClient) =&gt;
+  new UnstructuredData.Builder()
+    .MetaClient(metaClient)
+    .License(&quot;&lt;Your license here&gt;&quot;)
+    .Build();
+
+</code></pre><p>Instances of <code>IUnstructuredData</code> are thread safe and should be reused throughout your application.</p>
+<h2 id="create-a-zip">Create a ZIP</h2>
+<p>The basic steps of creating a ZIP are the same regardless of which encryption parameters are used.</p>
+<pre><code class="lang-cs" name="CreateZip">
+public static void CreateZip(
+  IUnstructuredData unstructured,
+  IDictionary&lt;string, Stream&gt; filesToArchive
+)
+{
+  using (var factory = unstructured.CreateArchiveFactory())
+
+    // The factory provides a stream variant as well
+  using (var archive = factory.CreateArchiveFile(&quot;path/to/output.zip&quot;))
+  {
+    foreach (var entry in filesToArchive)
+    {
+      var entryName = entry.Key;
+      var entryContent = entry.Value;
+      using (var itemOptions = factory.CreateItemOptions())
+      using (var status = Factory.CreateStatInfo())
+      {
+        status.Name = entryName;
+        archive.AddItem(factory.Context, status, archive, entryContent, itemOptions).Dispose();
+      }
+    }
+
+    // When finished with the archive, be sure to save
+    archive.Save(factory.Context)?.Dispose();
+  }
+}
+
+</code></pre><h3 id="configuring-encryption">Configuring encryption</h3>
+<p>By default, the SDK chooses an encryption method that provides strong security and is well suited for most applications.
+It may be desirable to change the encryption method (also called the encryption algorithm) used to create new ZIP entries.
+The SDK provides a simple of way setting the most common and useful encryption methods. Configure the <code>IPKItemOptions</code>,
+and then use them as you typically would, following the instructions for <a href="#create-a-zip">creating a ZIP</a>.</p>
+<pre><code class="lang-cs" name="EncryptionMethod">
+public static IPKItemOptions ConfigureEncryptionMethod(IArchiveFactory factory)
+{
+  var itemOptions = factory.CreateItemOptions();
+
+  // Configure encryption to use AE2 (for compatibility with other ZIP programs)
+  itemOptions.SetEncryptionMethod(EncryptionMethod.Ae2);
+
+  // Configure encryption to use AES-256
+  itemOptions.SetEncryptionMethod(EncryptionMethod.Aes256);
+
+  // Now use the configured options to add items to the ZIP as you normally would
+  return itemOptions;
+}
+
+</code></pre><h4 id="advanced-usage">Advanced usage</h4>
+<p>For very advanced applications, it may be necessary to be more detailed when configuring the encryption method. This
+snippet demonstrates how to configure the encryption more thoroughly. Review the <code>PK_ENCRYPT_METHOD</code> and <code>PK_CRYPT_FLAGS</code>
+enums for an exhaustive list of options.</p>
+<pre><code class="lang-cs" name="EncryptionMethodAdvanced">
+public static IPKItemOptions EncryptionMethodAdvanced(IArchiveFactory factory)
+{
+  var itemOptions = factory.CreateItemOptions();
+  var flags = CreateFlagsBitmask();
+
+  // Configure encryption to use AE2 (for compatibility with other ZIP programs)
+  itemOptions.SetEncryptMethod(PK_ENCRYPT_METHOD.PK_ENCRYPT_METHOD_AE2, 256, flags);
+
+  // Configure encryption to use AES-256
+  itemOptions.SetEncryptMethod(PK_ENCRYPT_METHOD.PK_ENCRYPT_METHOD_AES_256, 256, flags);
+
+  // Configure encryption to use AES-192
+  itemOptions.SetEncryptMethod(PK_ENCRYPT_METHOD.PK_ENCRYPT_METHOD_AES_192, 192, flags);
+
+  // Configure encryption to use AES-128
+  itemOptions.SetEncryptMethod(PK_ENCRYPT_METHOD.PK_ENCRYPT_METHOD_AES_128, 128, flags);
+
+  // Configure encryption to use 3DES
+  itemOptions.SetEncryptMethod(PK_ENCRYPT_METHOD.PK_ENCRYPT_METHOD_3DES, 168, flags);
+
+  // Disable encryption
+  itemOptions.SetEncryptMethod(PK_ENCRYPT_METHOD.PK_ENCRYPT_METHOD_NONE, 0, flags);
+
+  // Now use the configured options to add items to the ZIP as you normally would
+  return itemOptions;
+}
+
+public static PK_CRYPT_FLAGS CreateFlagsBitmask()
+{
+  // Always include the default flag
+  var flags = PK_CRYPT_FLAGS.PK_CRYPT_DEFAULT;
+
+  // If using a Smartkey and/or password, add the password key flag
+  flags |= PK_CRYPT_FLAGS.PK_CRYPT_PASSWORD_KEY;
+
+  // If using a Contingency Key, add the certificate key flag
+  flags |= PK_CRYPT_FLAGS.PK_CRYPT_CERTIFICATE_KEY;
+
+  return flags;
+}
+
+</code></pre><h3 id="configuring-compression">Configuring compression</h3>
+<p>By default, the SDK chooses compression setting that balances speed with compressed size. However, it is possible to
+change the compression method. One might use a different compression algorithm , such as deflate, store, and LZMA, or
+specify a different compression level (higher for smaller ZIPs, lower for faster processing) as the application requires.</p>
+<pre><code class="lang-cs" name="CompressionMethod">
+public static IPKItemOptions CompressionMethod(IArchiveFactory factory)
+{
+  var itemOptions = factory.CreateItemOptions();
+
+  // Configure compression to use the deflate algorithm at level 6
+  itemOptions.SetCompressMethodID(PK_COMPRESS_METHOD.PK_COMPRESS_METHOD_DEFLATE, 6, 0);
+
+  // Configure compression to use the store algorithm (no compression)
+  itemOptions.SetCompressMethodID(PK_COMPRESS_METHOD.PK_COMPRESS_METHOD_STORE, 0, 0);
+
+  // Now use the configured options to add items to the ZIP as you normally would
+  return itemOptions;
+}
+
+</code></pre><h2 id="encryption">Encryption</h2>
+<p>Encryption using both passwords and Smartkeys is straightforward. See the
+<a class="xref" href="../keyManagement/index.html#creating-and-updating-smartkeys">Key Management docs</a> for details on how to obtain an
+<code>ISmartkey</code>.</p>
+<pre><code class="lang-cs" name="Encryption">
+public static void ContingencyGroupWithSmartkey(
+  IUnstructuredData unstructured,
+  IMetaClient metaClient,
+  ISmartkey smartkey
+)
+{
+  using (var factory = unstructured.CreateArchiveFactory())
+  {
+    var listener = new MetaClientPasswordListener(metaClient)
+    {
+      EncryptionSpec = new EncryptionSpec
+      {
+        Smartkey = smartkey
+        // Optionally add a password here as well
+      }
+    };
+    factory.Context.PasswordListenerEx = listener;
+
+    // Proceed to create the ZIP as you normally would, using the factory created here.
+  }
+}
+
+</code></pre><div class="NOTE"><h5>Note</h5><p>In order for Smartcrypt Archive Contingency Groups to apply, you must run your application as Smartcrypt. See the
+<a class="xref" href="../metaclient/index.html#policy">MetaClient Policy</a> docs for more details.</p>
+</div>
+<h3 id="contingency-group-without-smartkey">Contingency group without Smartkey</h3>
+<p>The recommended way to gain access to the Contingency Group functionality of Smartcrypt is to use Smartkeys when
+encrypting. There may be some scenarios in which using a Smartkey is not an option. For these scenarios, we also provide
+the option of skipping the Smartkey, but still gaining the benefits of Contingency Groups.</p>
+<pre><code class="lang-cs" name="EncryptionWithoutSmartkey">
+public static void ContingencyGroupWithoutSmartkey(
+  IUnstructuredData unstructured,
+  IMetaClient metaClient,
+  string password
+)
+{
+  using (var factory = unstructured.CreateArchiveFactory())
+  {
+    var listener = new MetaClientPasswordListener(metaClient)
+    {
+      EncryptionSpec = new EncryptionSpec {Password = password}
+    };
+    factory.Context.PasswordListenerEx = listener;
+
+    // Proceed to create the ZIP as you normally would, using the factory created here.
+  }
+}
+
+</code></pre><h3 id="contingency-key">Contingency key</h3>
+<p>Applying a contingency key is a bit more involved. When possible, it is recommended to use Contingency Groups instead.</p>
+<pre><code class="lang-cs" name="ContingencyKey">
+public sealed class ContingencyKeyPasswordListener : UnifiedPasswordListener
+{
+  [CanBeNull]
+  public EncryptionSpec EncryptionSpec
+  {
+    set =&gt; metaClientPasswordListener.EncryptionSpec = value;
+  }
+
+  private readonly MetaClientPasswordListener metaClientPasswordListener;
+
+  public ContingencyKeyPasswordListener(IMetaClient metaClient) : base(metaClient.Logger)
+  {
+    metaClientPasswordListener = new MetaClientPasswordListener(metaClient);
+  }
+
+  /// &lt;summary&gt;
+  /// Delegates to the &lt;see cref=&quot;metaClientPasswordListener&quot;/&gt;.
+  /// &lt;/summary&gt;
+  public override DecryptionParameters GetDecryptionParameters(IPKArchiveRootFolder archive, IPKStat status,
+    int retryCount, KmsInfo kms) =&gt;
+    metaClientPasswordListener.GetDecryptionParameters(archive, status, retryCount, kms);
+
+  public override EncryptionParameters GetEncryptionParameters(IPKArchiveRootFolder archive, IPKStat status,
+    EncryptionChoices choices)
+  {
+    // Delegate to MetaClient to apply Smartkey and password set using EncryptionSpec property
+    var parameters = metaClientPasswordListener.GetEncryptionParameters(archive, status, choices);
+
+    // Prepare the contingency key
+    var session = Factory.CreateSession(&quot;Put license key here&quot;);
+    var certificateBytes = LoadCertificate();
+    var certificateStore = Factory.CreateCertificateStore(session, certificateBytes);
+
+    // Apply the certificates to be used, including the Contingency Key
+    parameters.Certificates = certificateStore;
+
+    return parameters;
+  }
+
+  private byte[] LoadCertificate()
+  {
+    // Load the certificate as a byte array. This could be from disk, network, or hard coded.
+    //   The certificate can be formatted as a .p7b, .cer, or .pgp.
+    return new byte[0];
+  }
+}
+
+public static void ContingencyKey(
+  IUnstructuredData unstructured,
+  IMetaClient metaClient,
+  ISmartkey smartkey
+)
+{
+  using (var factory = unstructured.CreateArchiveFactory())
+  {
+    var listener = new ContingencyKeyPasswordListener(metaClient)
+    {
+      EncryptionSpec = new EncryptionSpec
+      {
+        Smartkey = smartkey,
+        // Optionally add a password here as well
+      }
+    };
+    factory.Context.PasswordListenerEx = listener;
+
+    // Tell the Archive to expect a contingency key. The key will be retrieved from the password listener via callback.
+    using (var itemOptions = factory.CreateItemOptions())
+    {
+      var encryptionMethod =
+        itemOptions.GetEncryptMethod(out var encryptionKeyLength, out var encryptionFlags);
+      encryptionFlags |= PK_CRYPT_FLAGS.PK_CRYPT_COMBO_KEY;
+      itemOptions.SetEncryptMethod(encryptionMethod, encryptionKeyLength, encryptionFlags);
+
+      // Proceed to create the ZIP as you normally would, using the factory and itemOptions created here.
+    }
+  }
+}
+
+</code></pre><h2 id="decryption">Decryption</h2>
+<p>Once you have an <code>IUnstructuredData</code> instance, decrypting ZIP archives encrypted using a Smartkey is easy! If you do not
+have access to the Smartkey, but are part of the Contingency Group, this snippet will also grant you access to the files.</p>
+<pre><code class="lang-cs" name="Decryption">
+public static void DecryptAZipFile(IUnstructuredData unstructured)
+{
+  using (var factory = unstructured.CreateArchiveFactory())
+  using (var archive = factory.OpenArchiveFile(&quot;example.zip&quot;))
+  using (var item = archive.Item(0))
+  {
+    archive.ExtractFile(factory.Context, item, &quot;path/to/extract/item/to&quot;);
+  }
+}
+
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2018 PKWARE, Inc.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

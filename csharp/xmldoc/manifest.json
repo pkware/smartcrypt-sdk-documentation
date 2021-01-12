@@ -1,0 +1,2015 @@
+{
+  "homepages": [],
+  "source_base_path": "/Users/marius/Documents/pkware/metaclient-csharp/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "eYzAXcKSDWpdXhaRusUqlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.IAccountManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.IAccountManagement.html",
+          "hash": "prv9j1yEx+6ya04KvkCfBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.IDataStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.IDataStorage.html",
+          "hash": "Mrmt0lNG5Dhaz6rv3lI0xA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.IPersistenceCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.IPersistenceCallback.html",
+          "hash": "fDv9j91PZIZZjAhG9UW2BA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.ISmartcryptKeyManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.ISmartcryptKeyManagement.html",
+          "hash": "xu+wh2J2Hw2j03ZU6KRJCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.ISmartkeys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.ISmartkeys.html",
+          "hash": "blrjn6MZ92XO5mImfkbXGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.IUsers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.IUsers.html",
+          "hash": "ue68a/NQ/RfQgdOjB4VpNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.SmartcryptKeyManagement.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.SmartcryptKeyManagement.Builder.html",
+          "hash": "qLPaYGCTDvirEdKt0K+8gA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.SmartcryptKeyManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.SmartcryptKeyManagement.html",
+          "hash": "2unl/88TWxJKrqkZ+tMd1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.SmartkeySpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.SmartkeySpec.html",
+          "hash": "ZqaK66SUJ21fvuofdmMWlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.AbstractSmartkey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.AbstractSmartkey.html",
+          "hash": "epLiDKl6m40kukUgwtjecw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.ArchiveSmartkey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.ArchiveSmartkey.html",
+          "hash": "QObnHxxRi1UjPzmurTHE7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.CommunitySmartkey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.CommunitySmartkey.html",
+          "hash": "FDha2lR8CNKmWz/RyutYFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.ContingencySmartkey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.ContingencySmartkey.html",
+          "hash": "y8oRZ96sgJm7ogVs2s68bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.ErrorSmartkey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.ErrorSmartkey.html",
+          "hash": "sqhM0TnfhKgZNQ6XDoV3Ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.ISmartkey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.ISmartkey.html",
+          "hash": "7mvN+hSCNU7ye7g/YDXyNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.PrivateSmartkey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.PrivateSmartkey.html",
+          "hash": "B7q6N6aWTVXeFXKOYERZaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.SdkSmartkey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.SdkSmartkey.html",
+          "hash": "jvEKRINvPpfHW/Gpx8RKkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.TdeSmartkey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.TdeSmartkey.html",
+          "hash": "T+cws7e+arIK5idj0gLW0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.UnknownSmartkey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.UnknownSmartkey.html",
+          "hash": "D59yFKHvLE/QDQ6Tc8c23A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.Smartkeys.html",
+          "hash": "rjfqUyW9aRAd8n2HDzwrmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.UserSpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.UserSpec.html",
+          "hash": "iCL8K97MxHaBpGetbcQnHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/PKWARE.Smartcrypt.KeyManagement.html",
+          "hash": "mHhhxVB6x9X2UNbrsBum8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "keyManagement/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/index.html",
+          "hash": "Zy1MXW86OR/ThgWkF4vG9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "keyManagement/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "keyManagement/toc.html",
+          "hash": "rrbW00EdhrjHFQEAi18how=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.AccountInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.AccountInfo.html",
+          "hash": "SDQ5maUc0VpgMVZQIj9sSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.ApplicationCompliance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.ApplicationCompliance.html",
+          "hash": "USPhoGDlY7sJV+yQdpn/1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.ApplicationStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.ApplicationStatus.html",
+          "hash": "2afPmn/ctOhmk2QA+DLmKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.AssetRequestNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.AssetRequestNotification.html",
+          "hash": "S7uEfzh9+HVf1719/62A7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.ContingencyAesKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.ContingencyAesKey.html",
+          "hash": "+rz1ivfof9hKIeFP/sqSWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Credentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Credentials.html",
+          "hash": "eb8Y6sQooOAzy/fMFgAIaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.CryptoProvider.RandomProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.CryptoProvider.RandomProvider.html",
+          "hash": "k560jHbGbElD5JKudQRZXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.CryptoProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.CryptoProvider.html",
+          "hash": "K1kwDKvIxrdwGMsDat9vDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.EncryptionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.EncryptionInfo.html",
+          "hash": "Mfh/HSUjXiHN5Ncn+zpi9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Feature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Feature.html",
+          "hash": "Xux0BjxJf5Bv9gdUCyii/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.HttpClientNetworkRequestProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.HttpClientNetworkRequestProcessor.html",
+          "hash": "iHobNUrJFgj0Tn8yyKwyHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.HttpRequest.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.HttpRequest.Builder.html",
+          "hash": "RTUaW5JpveWgPmaLs8L/Hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.HttpRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.HttpRequest.html",
+          "hash": "2NzoSp+1yUjHgQg31bVSFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.HttpResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.HttpResponse.html",
+          "hash": "w837fC5sp+05TX9yw22F9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.IManagedAesKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.IManagedAesKey.html",
+          "hash": "xsS+ONiv9axVCBaK2OCHAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.IMetaClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.IMetaClient.html",
+          "hash": "usjt0fWI9bdikVXeiAYMug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.INetworkRequestProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.INetworkRequestProcessor.html",
+          "hash": "O3nJZV2bV+LAm9QApDqPDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.ISingleAssetManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.ISingleAssetManager.html",
+          "hash": "hXnZ+XAbYfrB4UWvl8bzCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.KnownUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.KnownUser.html",
+          "hash": "+UYh9uTfjpqRqjV+fAKOsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Logging.ConsoleLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Logging.ConsoleLogger.html",
+          "hash": "9QB6RsDw9W5F3GpVU0B7uw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Logging.Level.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Logging.Level.html",
+          "hash": "KstyYJh7i7wtm2bjs0NNMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Logging.Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Logging.Logger.html",
+          "hash": "qDxQyreETDpEV20gTRdG+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Logging.html",
+          "hash": "gIu79M4FDC+A0WkGkmq1Rw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.ManagedKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.ManagedKey.html",
+          "hash": "UNuVpPJPrNvyHkgi0p7rpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.MetaClient.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.MetaClient.Builder.html",
+          "hash": "duUmm1/FXy9Uht7CRm/NWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.MetaClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.MetaClient.html",
+          "hash": "HBmgjiwlVxyBbhxr6XdwYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.MetaClientSemanticEncryption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.MetaClientSemanticEncryption.html",
+          "hash": "iMoS51M3LBch0rNisyVagg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Notification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.Notification.html",
+          "hash": "n89RDYcM/SGyQ9BVvdzpfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.NotificationPriority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.NotificationPriority.html",
+          "hash": "XMJzYPj8Ae5t3DmX3YOEIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.SingleAssetManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.SingleAssetManager.html",
+          "hash": "1XFcmHned4Qh1jZb9N6rIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.SyncProblemNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.SyncProblemNotification.html",
+          "hash": "2lZFpa0Zg0uH+3FPHlWEPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.UpgradeStateNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.UpgradeStateNotification.html",
+          "hash": "HcORCt539c6Tfw0b/+Ejnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/PKWARE.Smartcrypt.MetaClient.html",
+          "hash": "27tEwcD0i+a096/TNY+3uQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "metaclient/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/index.html",
+          "hash": "b/hEeSUJgvB4y3sjQFlO9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "metaclient/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "metaclient/toc.html",
+          "hash": "WG1dJZHKUHRxcNBtTud8aA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.MetaClientException.html",
+          "hash": "rU8GGoQLPJPHcIBRhcMzYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.MetaClient.html",
+          "hash": "fZxA5WQpgqPTLMN/sjjBOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AccountTransferRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AccountTransferRequest.html",
+          "hash": "1U7vKnHGbDqe39tAGGkgzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AccountTransferResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AccountTransferResponse.html",
+          "hash": "5+K30TfkjhtZoTM6bb72Xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.App.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.App.Record.html",
+          "hash": "ndh0bKsIG8gJUSWt7W6qeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.App.html",
+          "hash": "jS0CaszqsJvahR7T3FFVXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AppData.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AppData.Record.html",
+          "hash": "3EfUTs8AmyMY15pHsS6RBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AppData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AppData.html",
+          "hash": "vsemr2jUJDI3yZNHYcMAKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ApplicationStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ApplicationStatus.html",
+          "hash": "SqeNLVb6VGpUPTdaDyLKPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ApplicationStatusReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ApplicationStatusReport.html",
+          "hash": "XJk/G4ugYgHTzjnYhgtedw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Asset.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Asset.Record.html",
+          "hash": "aTBtSi4XSXdgTspaM/pd+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Asset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Asset.html",
+          "hash": "euPy3JIrzl6BqnHRk6EDzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetFeature.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetFeature.Record.html",
+          "hash": "m0ZJDvOvwXELd1rsU9W7OA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetFeature.html",
+          "hash": "Y3O6SsmUEQP5yMdpvHMC5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetInfoBlob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetInfoBlob.html",
+          "hash": "Q8sXUqYzv8HKCnjE8yulpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetKey.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetKey.Record.html",
+          "hash": "GxcZL5KQ+899AYk79TvDdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetKey.html",
+          "hash": "25dHoXxPWQtiSEEs/ZEFRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetRequest.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetRequest.Record.html",
+          "hash": "YhbfKYsXxfRODHVZ11NgQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetRequest.html",
+          "hash": "sKZGBwrWij7nF5dmXghc2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetRight.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetRight.Record.html",
+          "hash": "rAXaQOdBI08aUim6vRt5Cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetRight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.AssetRight.html",
+          "hash": "/id2R9le/Y8pq4l2Okgk5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.BasePdu-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.BasePdu-1.html",
+          "hash": "A3iQW/fj7MUFQXPv0t4apA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.BaseRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.BaseRecord.html",
+          "hash": "0NSwrevqsP3UleksfokNfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ChangePasswordRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ChangePasswordRequest.html",
+          "hash": "G+WFwbb9PaBXq/NkjT1OSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ChangePasswordResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ChangePasswordResponse.html",
+          "hash": "76FTqItXFXtQe4Y5NB5XzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ClusterInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ClusterInfo.html",
+          "hash": "s/bqrDDkm7elOh7JItr4nA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ClusterInfoServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ClusterInfoServer.html",
+          "hash": "cgEIZW/1dypcoobOljV7NA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ContingencyGroup.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ContingencyGroup.Record.html",
+          "hash": "AtVhMlAH7CoCmfPCCk/QEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ContingencyGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ContingencyGroup.html",
+          "hash": "o8u6+HU/IbcH561o2c9jAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ContingencyKey.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ContingencyKey.Record.html",
+          "hash": "k5D3dKgyKs5d+We91jO5Fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ContingencyKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ContingencyKey.html",
+          "hash": "PMRi9lbFdZeAJ55JtPm2XA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ContingencyMasterKey.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ContingencyMasterKey.Record.html",
+          "hash": "XOP9HzoLcR5J5rzRV0lVuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ContingencyMasterKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ContingencyMasterKey.html",
+          "hash": "canmtkGBqE358Kgqj/DaIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.CreateAccountInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.CreateAccountInfo.html",
+          "hash": "3EPvSNpt8Kg47ijEPmkZTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.DataMemo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.DataMemo.html",
+          "hash": "JBQBN+l39M5EbtPtWj/ZkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Deployment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Deployment.html",
+          "hash": "E1VEMlskZh09/Ssxfa3Oow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Device.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Device.Record.html",
+          "hash": "4ohbjKtoLSu10T0g+0U4RA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Device.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Device.html",
+          "hash": "cfiOUr6iD7NOqOeygm4sAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ETag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ETag.html",
+          "hash": "Ek9/xzPGYYmF1qOoSNk3eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.EncryptionPurpose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.EncryptionPurpose.html",
+          "hash": "2puFV5hB2FAiwLtgsZyaBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.EncryptionTactic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.EncryptionTactic.html",
+          "hash": "XFzXv6CtZoPMYmLRc6Op9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Entitlement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Entitlement.html",
+          "hash": "+UsldUgCpOb4/FVU9n9uIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ICryptoProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ICryptoProvider.html",
+          "hash": "03CBz6Y8F+Uygdt1EPqcSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ILoginOkResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ILoginOkResponse.html",
+          "hash": "P2aZZ+eDvQ31QUONkqlKLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ILoginResetResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.ILoginResetResponse.html",
+          "hash": "sFiD6SZbts6sf+vBsoGghw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.IRequestHasCredentialInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.IRequestHasCredentialInfo.html",
+          "hash": "oLzNOs11Cl0/5pcKlI52sw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.IRequestHasDeviceAndAppInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.IRequestHasDeviceAndAppInfo.html",
+          "hash": "HJIhVHCwHVMsfMLwKIPHgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.JsonProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.JsonProvider.html",
+          "hash": "iktxbslrFevF7Z08Td0Meg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.LicenseKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.LicenseKey.html",
+          "hash": "xU3KmoHEWBwqy9NR5Jxtsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.LoginParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.LoginParameters.html",
+          "hash": "IA2EUGnPgSxG07xQYeTGvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.LoginRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.LoginRequest.html",
+          "hash": "4iL3lw20C5W5SfvzslETbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.LoginResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.LoginResponse.html",
+          "hash": "xxjRBCZgtDIjfCHUlcszWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Pid.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Pid.Record.html",
+          "hash": "nbuoccIMeOy7Xtszo+VbyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Pid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Pid.html",
+          "hash": "YNGZOBj4ECRzT3iN9KH6nA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Platform.html",
+          "hash": "615yW8h1OfgQ1xLrcco92w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Purpose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Purpose.html",
+          "hash": "dEaIaKILqPkC0p++EODk0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.RsaKeyPair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.RsaKeyPair.html",
+          "hash": "n2U1Ar59yMbXKqLwg6lnug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SatellitePolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SatellitePolicy.html",
+          "hash": "TJ6HWYjggNfHf6qTVCnr+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SecureByteArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SecureByteArray.html",
+          "hash": "4hVQDN0MY6BQemFSSeFwcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SemanticEncryption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SemanticEncryption.html",
+          "hash": "JHRgW8eKzIPTbAwNH0q3Og=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Server.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Server.html",
+          "hash": "aV0RTlG9TOSQtR0Vel6lEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Sid.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Sid.Record.html",
+          "hash": "lNlPVfOUp6Uraoodg4qo9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Sid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Sid.html",
+          "hash": "b38aixk84ce6bEDy6OKEKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SiteData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SiteData.html",
+          "hash": "/wuO8/rUUjlGS8/WwB+dHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.SmartcryptCrypto.html",
+          "hash": "bMx519IX3hAHrpgg7IDKVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.TeamData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.TeamData.html",
+          "hash": "ubfLBw2vPNSO4aEtcv9IzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Url.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Url.html",
+          "hash": "xIswQNx00qn3v8MeqlaLng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.User.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.User.Record.html",
+          "hash": "BShw9XN3DbhYov66sBx/Uw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.User.html",
+          "hash": "FAu8QlJP+7nVgdrv75rbGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Xpid.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Xpid.Record.html",
+          "hash": "+7Wgycbrbfoi2mAJxAQ2XA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Xpid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.Xpid.html",
+          "hash": "qScN/P2UMw3UZnBnEo3Gaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/PKWARE.Smartcrypt.Protocol.html",
+          "hash": "9LlNAj2WzujySylRM3Ff+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "smartcryptProtocol/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/index.html",
+          "hash": "foSgMmwZz+Othiaf+jZTdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "smartcryptProtocol/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "smartcryptProtocol/toc.html",
+          "hash": "G9oYAAzEwRAmxiSMxnuMWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "structuredData/PKWARE.Smartcrypt.Structured.EncryptionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "structuredData/PKWARE.Smartcrypt.Structured.EncryptionResult.html",
+          "hash": "BarDo4vdou0anGMYt5uqAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "structuredData/PKWARE.Smartcrypt.Structured.EncryptionStreamResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "structuredData/PKWARE.Smartcrypt.Structured.EncryptionStreamResult.html",
+          "hash": "ijrqiJnmPCg7fwoUxo4HCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "structuredData/PKWARE.Smartcrypt.Structured.IAuthenticatedEncryption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "structuredData/PKWARE.Smartcrypt.Structured.IAuthenticatedEncryption.html",
+          "hash": "OrXE0d7yGTkZn6FxAisU5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "structuredData/PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "structuredData/PKWARE.Smartcrypt.Structured.IFormatPreservingEncryption.html",
+          "hash": "xGOfQ5aNhKQgV9jGYprQhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "structuredData/PKWARE.Smartcrypt.Structured.ILengthPreservingEncryption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "structuredData/PKWARE.Smartcrypt.Structured.ILengthPreservingEncryption.html",
+          "hash": "+oPS9HGJSpUBSvGw3JdZQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "structuredData/PKWARE.Smartcrypt.Structured.ISmartcryptStructuredData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "structuredData/PKWARE.Smartcrypt.Structured.ISmartcryptStructuredData.html",
+          "hash": "JagVzbVJ1nb6tBJDmaX+kQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "structuredData/PKWARE.Smartcrypt.Structured.SmartcryptStructuredData.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "structuredData/PKWARE.Smartcrypt.Structured.SmartcryptStructuredData.Builder.html",
+          "hash": "Z3ASPSU0d+FzUwCPi7L8NQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "structuredData/PKWARE.Smartcrypt.Structured.SmartcryptStructuredData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "structuredData/PKWARE.Smartcrypt.Structured.SmartcryptStructuredData.html",
+          "hash": "cwuRdxtUZYL0wn6am9htnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "structuredData/PKWARE.Smartcrypt.Structured.yml",
+      "output": {
+        ".html": {
+          "relative_path": "structuredData/PKWARE.Smartcrypt.Structured.html",
+          "hash": "iEI4v4KYfxUQZAGt6Xx0GA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "structuredData/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "structuredData/index.html",
+          "hash": "dURuSbHwMls7bwyIPlCisw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "structuredData/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "structuredData/toc.html",
+          "hash": "G9s0bI2+/dGEJVI/aAytMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "8xSc30J7XLedlBvI4XF2+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.DecryptionParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.DecryptionParameters.html",
+          "hash": "ECbwYe6XnJbAPoMUZgV/Qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.EncryptionChoices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.EncryptionChoices.html",
+          "hash": "cmpNlB8JQT9yJlq6n5guXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.EncryptionMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.EncryptionMethod.html",
+          "hash": "8Hf+qUZ1DidN4+qyMny5+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.EncryptionParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.EncryptionParameters.html",
+          "hash": "eGt2RUJ92BVgiUD9zEzBmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.KmsInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.KmsInfo.html",
+          "hash": "VDWMlAyPRoHKlGEpxyzLJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.PKItemOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.PKItemOptions.html",
+          "hash": "6c04ht61M05oW+F0mEA1YA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.ArchiveSupport.html",
+          "hash": "rHDecc4Q36yCb7Ftf4R8mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.EncryptionSpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.EncryptionSpec.html",
+          "hash": "ZkkUceRiZ8VFH09xXxsv0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.IArchiveFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.IArchiveFactory.html",
+          "hash": "w1ZAxxv/k4imkx/5bsbvyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.IUnstructuredData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.IUnstructuredData.html",
+          "hash": "E+MNWgmd6Vv9wgMTdEGGaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.MetaClientPasswordListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.MetaClientPasswordListener.html",
+          "hash": "eNG/eV4f1B93LkTXGyOfZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.UnifiedPasswordListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.UnifiedPasswordListener.html",
+          "hash": "9G11eUjDy6cl9JnIu8qHaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.UnstructuredData.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.UnstructuredData.Builder.html",
+          "hash": "+wJxU8vi9/zcVLyLchb52g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.UnstructuredData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.UnstructuredData.html",
+          "hash": "lRX9ImnPmcz80Y4+4TEmDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/PKWARE.Smartcrypt.Unstructured.html",
+          "hash": "fTRhnTqUv2/fILwI3di87g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "unstructuredData/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/index.html",
+          "hash": "DeSj2Qtp3SbAWiu7pYqtoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "unstructuredData/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "unstructuredData/toc.html",
+          "hash": "vSkKz2YoH03IOvxHI8WeZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 151,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,8 +1,14 @@
 API Docs
 ========
 
-* `Key Management <xmldoc/keyManagement/index.html>`_
-* `Structured Data <xmldoc/structuredData/index.html>`_
-* `Unstructured Data <xmldoc/unstructuredData/index.html>`_
-* `MetaClient <xmldoc/metaclient/index.html>`_
-* `Smartcrypt Protocol <xmldoc/smartcryptProtocol/index.html>`_
+.. only:: csharp
+
+    * `Key Management <xmldoc/keyManagement/index.html>`_
+    * `Structured Data <xmldoc/structuredData/index.html>`_
+    * `Unstructured Data <xmldoc/unstructuredData/index.html>`_
+    * `MetaClient <xmldoc/metaclient/index.html>`_
+    * `Smartcrypt Protocol <xmldoc/smartcryptProtocol/index.html>`_
+
+.. only:: java
+
+    `Javadoc <javadoc/index.html?overview-summary.html>`_

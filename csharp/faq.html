@@ -1,0 +1,141 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>FAQ &#8212; Smartcrypt SDK  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Package Integrity" href="checksums.html" />
+    <link rel="prev" title="Notifications" href="notifications.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="faq">
+<h1>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-s-a-smartkey">
+<h2>What’s a Smartkey?<a class="headerlink" href="#what-s-a-smartkey" title="Permalink to this headline">¶</a></h2>
+<p>A Smartkey is a 256 bit AES key with cryptographically validated metadata. Smartkeys are stored in the Smartcrypt Enterprise Manager for easy auditing and escrow. Smartkeys have access control lists built-in and can be versioned allowing for rotation.</p>
+</div>
+<div class="section" id="smartkey-kinds-and-owners">
+<h2>Smartkey Kinds and Owners<a class="headerlink" href="#smartkey-kinds-and-owners" title="Permalink to this headline">¶</a></h2>
+<p>Smartkey kinds are used to sort Smartkeys into logical groups. For example, you might have multiple keys used for encrypting personally identifiable information (PII), multiple keys for encrypting file shares, and multiple keys that only certain Active Directory groups should ever have access to. By creating a Kind for each of these scenarios, you can group the keys and define internal policies for how keys should be distributed to Applications.</p>
+<p>Each Smartkey is owned by an identity. Most identities map to a user in Active Directory, but the Smartcrypt Enterprise Manager also has an identity. Only the owner of a Smartkey is able to manage it, performing actions like modifying who has access and changing it’s name.</p>
+</div>
+<div class="section" id="i-m-familiar-with-using-rsa-keys-what-s-the-smartcrypt-equivalent">
+<h2>I’m familiar with using RSA keys; what’s the Smartcrypt equivalent?<a class="headerlink" href="#i-m-familiar-with-using-rsa-keys-what-s-the-smartcrypt-equivalent" title="Permalink to this headline">¶</a></h2>
+<p>Smartcrypt does not have a cryptographic primitive equivalent to RSA keys. Instead, Smartcrypt uses cryptographically validated​ metadata to perform the most common task for which asymmetric encryption is used: managing access to the AES session key.</p>
+<p>Smartkeys are distributed to authorized users automatically. When a user’s access to a Smartkey is removed, the Smartkey is automatically deleted from their systems. Additionally, rotatable Smartkeys are rotated, so a new AES key is issued to all users still authorized to use the Smartkey, and all new encryptions are performed with the new key.</p>
+</div>
+<div class="section" id="what-s-the-difference-between-rotatable-and-non-rotatable-smartkeys">
+<h2>What’s the difference between rotatable and non-rotatable Smartkeys?<a class="headerlink" href="#what-s-the-difference-between-rotatable-and-non-rotatable-smartkeys" title="Permalink to this headline">¶</a></h2>
+<p>Smartkeys are versioned AES keys. When a Smartkey is rotated, a new AES key is issued and is attached to the Smartkey as a version. Rotation typically happens when users are removed from the access control list for the Smartkey, but can also be initiated for other reasons. Most Smartkeys are, and most scenarios want to use, rotatable Smartkeys.</p>
+<p>There are certain scenarios, such as Format and Length Preserving Encryption, where key rotation is not acceptable. For such scenarios, non-rotatable Smartkeys exist. Skipping key rotation weakens the long-term security of a Smartkey, so be sure to read the <a class="reference internal" href="flpe.html"><span class="doc">FLPE docs</span></a> before proceeding.</p>
+</div>
+<div class="section" id="why-are-my-smartkeys-not-syncing-to-my-client">
+<h2>Why are my Smartkeys not syncing to my client?<a class="headerlink" href="#why-are-my-smartkeys-not-syncing-to-my-client" title="Permalink to this headline">¶</a></h2>
+<p>It’s possible that the Application you are using does not have a mapping for the Smartkey <code class="docutils literal notranslate"><span class="pre">Kind</span></code>. See the <a class="reference internal" href="manager.html#setting-up-an-application"><span class="std std-ref">Smartcrypt Enterprise Manager Configuration</span></a> page for configuration details.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/smartcrypt.svg" alt="Logo"/>
+            </a></p>
+<h1 class="logo"><a href="index.html">Smartcrypt SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logging.html">Logging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="login.html">Implicit Login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manager.html">Smartcrypt Enterprise Manager Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="smartkeyStrategies.html">Smartkey Strategies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flpe.html">Format and Length Preserving Encryption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notifications.html">Notifications</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FAQ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-s-a-smartkey">What’s a Smartkey?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#smartkey-kinds-and-owners">Smartkey Kinds and Owners</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#i-m-familiar-with-using-rsa-keys-what-s-the-smartcrypt-equivalent">I’m familiar with using RSA keys; what’s the Smartcrypt equivalent?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-s-the-difference-between-rotatable-and-non-rotatable-smartkeys">What’s the difference between rotatable and non-rotatable Smartkeys?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#why-are-my-smartkeys-not-syncing-to-my-client">Why are my Smartkeys not syncing to my client?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="checksums.html">Package Integrity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apiDocs.html">API Docs</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="notifications.html" title="previous chapter">Notifications</a></li>
+      <li>Next: <a href="checksums.html" title="next chapter">Package Integrity</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, PKWARE, Inc.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
