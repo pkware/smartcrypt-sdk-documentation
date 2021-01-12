@@ -1,4 +1,4 @@
-name: Test site links
+name: CI
 on:
   push
 
@@ -49,3 +49,11 @@ jobs:
         run: |
           nohup python3 -m http.server &
           pylinkvalidate.py --progress --workers=3 localhost:8000
+
+      - name: Deploy site
+        if: github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: root
+          cname: sdk.smartcrypt.com
