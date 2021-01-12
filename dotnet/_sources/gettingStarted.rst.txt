@@ -44,7 +44,7 @@ If not using NuGet, or if unable to reach the PKWARE NuGet server, you can downl
 #. Change the downloaded files from ``.nupkg`` to ``.zip``
 #. Extract the DLL from the ``lib`` folder in the zip, and check the ``.nuspec`` file for any transitive dependencies needed.
 
-.. note:: The repository is password protected; contact `PKWARE Sales and Support <mailto:sales@pkware.com>`_ for access.
+.. note:: The repository is password protected; use the credentials issued by `PKWARE Sales and Support <mailto:sales@pkware.com>`_ for access.
 
 Add the following NuGet packages
 
@@ -52,12 +52,15 @@ Add the following NuGet packages
 * ``PKWARE.Smartcrypt.Structured``
 * ``PKWARE.Smartcrypt.Unstructured``
 
+PKArchive.NET Toolkit
+^^^^^^^^^^^^^^^^^^^^^
+
+The Unstructured Data component requires the PKArchive.NET Toolkit. This is available as a Windows installer, and can be downloaded from https://packages.smartcrypt.com/repository/binaries-public/sdk/PKWARE_Toolkit_Win_11.00.0066.exe. After installing, the ``PKArchive.NET`` DLLs can be found in ``Documents\Visual Studio 2010\Projects\PKWARE\PAAPI11\Lib``.
+
 Framework compatibility
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 PKWARE provides support for .NET Framework 4.6.1 and up on Windows, and for .NET Core 2.1 on all platforms, which is the LTS release from Microsoft. The SDK targets .NET Standard 2.0, so other frameworks may work despite being out of support. A complete compatibility matrix is available `from Microsoft <https://docs.microsoft.com/en-us/dotnet/standard/net-standard>`_.
-
-.. note:: The Unstructured Data component requires the PKArchive.NET Toolkit.
 
 Visual Studio
 ^^^^^^^^^^^^^
