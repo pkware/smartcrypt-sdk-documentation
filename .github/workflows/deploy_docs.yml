@@ -44,7 +44,7 @@ jobs:
         run: python3 -m pip install -r requirements-sphinx.txt
 
       - name: Build .NET site
-        run: sphinx-build -b html -t csharp dotnet/ root/dotnet
+        run: sphinx-build -b html -t csharp dotnet/ root/csharp
 
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3
