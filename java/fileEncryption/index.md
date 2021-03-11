@@ -264,8 +264,7 @@ The process is very similar to the encrypting with a Smartkey, but a password __
     ```
 
 !!! important
-    In order for Smartcrypt Contingency Groups to apply, you must run your application as Smartcrypt. See the
-    [MetaClient Policy] docs for more details.
+    In order for Smartcrypt Contingency Groups to apply, you must run your application as Smartcrypt.
 
 ## Decryption
 Once you have an `UnstructuredData` instance, decrypting ZIP archives encrypted using a Smartkey is easy! If you do not
