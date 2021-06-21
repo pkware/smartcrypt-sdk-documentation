@@ -18,5 +18,5 @@ pylinkvalidator==0.3
 pymdown-extensions==8.2
 PyYAML==5.4.1
 six==1.16.0
-soupsieve==2.1
+soupsieve==2.2.1
 tornado==6.1
