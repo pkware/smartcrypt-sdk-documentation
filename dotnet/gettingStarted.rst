@@ -48,9 +48,9 @@ If not using NuGet, or if unable to reach the PKWARE NuGet server, you can downl
 
 Add the following NuGet packages
 
-* ``PKWARE.Smartcrypt.KeyManagement``
-* ``PKWARE.Smartcrypt.Structured``
-* ``PKWARE.Smartcrypt.Unstructured``
+* ``PKWARE.Smartcrypt.KeyManagement`` - Required for creating, syncing, and modifying Smartkeys
+* ``PKWARE.Smartcrypt.Structured`` - Required for working with structured data encryption
+* ``PKWARE.Smartcrypt.Unstructured`` - Required for working with unstructured data encryption
 
 PKArchive.NET Toolkit
 ^^^^^^^^^^^^^^^^^^^^^
