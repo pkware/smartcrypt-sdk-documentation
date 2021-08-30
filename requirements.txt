@@ -9,7 +9,7 @@ lunr==0.6.0
 Markdown==3.3.4
 MarkupSafe==2.0.1
 mkdocs==1.2.2
-mkdocs-material==7.2.4
+mkdocs-material==7.2.5
 mkdocs-material-extensions==1.0.1
 mkdocs-minify-plugin==0.4.0
 nltk==3.6.2
