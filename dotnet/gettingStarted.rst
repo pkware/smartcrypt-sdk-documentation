@@ -60,7 +60,7 @@ The Unstructured Data component requires the PKArchive.NET Toolkit. This is avai
 Framework compatibility
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-PKWARE provides support for .NET Framework 4.6.1 and up on Windows, and for .NET Core 2.1 on all platforms, which is the LTS release from Microsoft. The SDK targets .NET Standard 2.0, so other frameworks may work despite being out of support. A complete compatibility matrix is available `from Microsoft <https://docs.microsoft.com/en-us/dotnet/standard/net-standard>`_.
+The PKWARE SDK supports .NET Framework 4.6.1 and up on Windows and .NET Core 3.1 and up on all platforms. Any type of .NET Core support requires .NET Framework to also be installed on the system. A complete compatibility matrix is available `from Microsoft <https://docs.microsoft.com/en-us/dotnet/standard/net-standard>`_.
 
 Visual Studio
 ^^^^^^^^^^^^^
