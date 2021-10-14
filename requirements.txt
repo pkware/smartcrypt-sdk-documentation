@@ -15,7 +15,7 @@ mkdocs-minify-plugin==0.4.1
 nltk==3.6.5
 Pygments==2.10.0
 pylinkvalidator==0.3
-pymdown-extensions==8.2
+pymdown-extensions==9.0
 PyYAML==5.4.1
 six==1.16.0
 soupsieve==2.2.1
