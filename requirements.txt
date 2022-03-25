@@ -1,11 +1,11 @@
 beautifulsoup4==4.10.0
-click==8.0.3
+click==8.0.4
 future==0.18.2
 htmlmin==0.1.12
 Jinja2==3.0.3
 jsmin==3.0.1
 livereload==2.6.3
-lunr==0.6.1
+lunr==0.6.2
 Markdown==3.3.6
 MarkupSafe==2.0.1
 mkdocs==1.2.3
@@ -15,7 +15,7 @@ mkdocs-minify-plugin==0.5.0
 nltk==3.7
 Pygments==2.11.2
 pylinkvalidator==0.3
-pymdown-extensions==9.2
+pymdown-extensions==9.3
 PyYAML==6.0
 six==1.16.0
 soupsieve==2.3.1
