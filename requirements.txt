@@ -2,7 +2,7 @@ beautifulsoup4==4.10.0
 click==8.1.2
 future==0.18.2
 htmlmin==0.1.12
-Jinja2==3.0.3
+Jinja2==3.1.1
 jsmin==3.0.1
 livereload==2.6.3
 lunr==0.6.2
