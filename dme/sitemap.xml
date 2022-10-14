@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://sdk.smartcrypt.com/dme/</loc>
+         <lastmod>2022-10-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sdk.smartcrypt.com/dme/masking/</loc>
+         <lastmod>2022-10-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sdk.smartcrypt.com/dme/masking/installing/</loc>
+         <lastmod>2022-10-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>

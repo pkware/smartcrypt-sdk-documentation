@@ -1,18 +1,18 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Logging &#8212; Smartcrypt SDK  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Implicit Login" href="login.html" />
@@ -33,27 +33,27 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="logging">
+  <section id="logging">
 <h1>Logging<a class="headerlink" href="#logging" title="Permalink to this headline">¶</a></h1>
 <p>By default, all log statements will be printed to the console. This works fine for development, but is not recommended for production. Instead, it is recommended that you provide a logging target that suits your application’s production environment.</p>
-<div class="section" id="configuring-logging">
+<section id="configuring-logging">
 <h2>Configuring Logging<a class="headerlink" href="#configuring-logging" title="Permalink to this headline">¶</a></h2>
 <p>To customize logging, subclass the <a class="reference external" href="xmldoc/metaclient/PKWARE.Smartcrypt.MetaClient.Logging.Logger.html">Logger</a> class and provide an instance of your class to the <a class="reference external" href="xmldoc/metaclient/PKWARE.Smartcrypt.MetaClient.MetaClient.Builder.html#PKWARE_Smartcrypt_MetaClient_MetaClient_Builder_Logger_PKWARE_Smartcrypt_MetaClient_Logging_Logger">MetaClient Builder</a>.</p>
 <p>The most common behavior toggle is to change the logging level. Set the <a class="reference external" href="xmldoc/metaclient/PKWARE.Smartcrypt.MetaClient.Logging.Logger.html#PKWARE_Smartcrypt_MetaClient_Logging_Logger_Level">Level</a> property to the level you desire.</p>
 <p>You can also control the format of the <cite>tag</cite>. The <cite>tag</cite> is useful for differentiating multiple threads or instances and includes the line number, method name, and file information about the logging statement. You can customize the <cite>tag</cite> by overriding the <a class="reference external" href="xmldoc/metaclient/PKWARE.Smartcrypt.MetaClient.Logging.Logger.html#PKWARE_Smartcrypt_MetaClient_Logging_Logger_FormatTag_System_Int32_System_String_System_String">FormatTag</a> method.</p>
-</div>
-<div class="section" id="common-strategies">
+</section>
+<section id="common-strategies">
 <h2>Common Strategies<a class="headerlink" href="#common-strategies" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="disable-logging">
+<section id="disable-logging">
 <h3>Disable logging<a class="headerlink" href="#disable-logging" title="Permalink to this headline">¶</a></h3>
 <p>There is no toggle to disable logging. Instead, set the <a class="reference external" href="xmldoc/metaclient/PKWARE.Smartcrypt.MetaClient.Logging.Logger.html#PKWARE_Smartcrypt_MetaClient_Logging_Logger_Level">Level</a> to <cite>Error</cite> and provide an empty implementation of the <a class="reference external" href="xmldoc/metaclient/PKWARE.Smartcrypt.MetaClient.Logging.Logger.html#PKWARE_Smartcrypt_MetaClient_Logging_Logger_Log_PKWARE_Smartcrypt_MetaClient_Logging_Level_System_String_System_String_Exception">Log</a> method.</p>
-</div>
-<div class="section" id="change-logging-destinations-after-initialization">
+</section>
+<section id="change-logging-destinations-after-initialization">
 <h3>Change logging destinations after initialization<a class="headerlink" href="#change-logging-destinations-after-initialization" title="Permalink to this headline">¶</a></h3>
 <p>You may want to change where messages are logged during the execution of your program. To do this, customize your <cite>Logger</cite> subclass to maintain the information of where, when, and how to log. This gives you full control over the structure, threading, and lifecycles of your application logging.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
           </div>
@@ -62,9 +62,6 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-            <p class="logo"><a href="index.html">
-              <img class="logo" src="_static/smartcrypt.svg" alt="Logo"/>
-            </a></p>
 <h1 class="logo"><a href="index.html">Smartcrypt SDK</a></h1>
 
 
@@ -102,17 +99,23 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
@@ -121,8 +124,8 @@
       &copy;2018, PKWARE, Inc.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
     </div>
 
