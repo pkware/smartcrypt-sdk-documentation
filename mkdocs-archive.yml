@@ -1,0 +1,52 @@
+site_name: Archive SDK
+site_url: https://sdk.smartcrypt.com/archive
+site_description: "Archive SDK for JVM"
+site_author: PKWARE, Inc.
+repo_url: https://github.com/pkware/smartcrypt-sdk-documentation/
+edit_uri: edit/main/archive/
+remote_branch: gh-pages
+docs_dir: archive
+site_dir: root/archive
+
+copyright: 'Copyright &copy; 2022 PKWARE, Inc.'
+
+theme:
+  name: 'material'
+  features:
+    - navigation.tabs
+
+extra_css:
+  - 'css/app.css'
+
+markdown_extensions:
+  - smarty
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - admonition
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+        remove_comments: true
+
+nav:
+  - Overview: index.md
+  - Installing: installing.md
