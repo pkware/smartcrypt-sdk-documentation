@@ -38,6 +38,9 @@ jobs:
       - name: Build Java site
         run: mkdocs build -f mkdocs-java.yml
 
+      - name: Build DME site
+        run: mkdocs build -f mkdocs-dme.yml
+
       - name: Install Sphinx dependencies
         run: python3 -m pip install -r requirements-sphinx.txt
 
