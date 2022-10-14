@@ -41,6 +41,9 @@ jobs:
       - name: Build DME site
         run: mkdocs build -f mkdocs-dme.yml
 
+      - name: Build Archive site
+        run: mkdocs build -f mkdocs-archive.yml
+
       - name: Install Sphinx dependencies
         run: python3 -m pip install -r requirements-sphinx.txt
 
