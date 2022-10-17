@@ -5,6 +5,11 @@ The binaries needed for the SDK are hosted in a Maven repository by PKWARE.
 
 ## Getting the packages
 
+!!! info
+We highly recommend involving your DevOps/Infra group and having them proxy PKWARE's repository through your
+corporate Maven repository, rather than adding PKWARE's repository to each of your software projects. Point them at
+this page.
+
 === "Gradle Catalog"
     The [Gradle Catalog] for DME contains entries for all the most essential libraries.
     Add the following to your `settings.gradle` or `settings.gradle.kts`
