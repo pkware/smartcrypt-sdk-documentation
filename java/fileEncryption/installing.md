@@ -6,9 +6,9 @@ The binaries needed for the SDK are hosted in a Maven repository by PKWARE.
 ## Getting the packages
 
 !!! info
-We highly recommend involving your DevOps/Infra group and having them proxy PKWARE's repository through your
-corporate Maven repository, rather than adding PKWARE's repository to each of your software projects. Point them at
-this page.
+    We highly recommend involving your DevOps/Infra group and having them proxy PKWARE's repository through your
+    corporate Maven repository, rather than adding PKWARE's repository to each of your software projects. Point them at
+    this page.
 
 === "Gradle"
     Add the following to your `repositories` block
