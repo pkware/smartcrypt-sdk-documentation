@@ -2,87 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sdk.smartcrypt.com/java/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/changelog/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/contentLicense/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/faq/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/structured/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/troubleshooting/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/concepts/flpe/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/concepts/logging/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/concepts/notifications/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/concepts/observables/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/fileEncryption/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/fileEncryption/installing/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/fileEncryption/zipDetails/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/keyManagement/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/keyManagement/installing/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/keyManagement/keySegregation/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sdk.smartcrypt.com/java/keyManagement/metaClient/</loc>
-         <lastmod>2022-10-17</lastmod>
+         <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
