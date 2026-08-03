@@ -77,11 +77,11 @@ The binaries needed for the SDK are hosted in a Maven repository by PKWARE.
 
 A Java 8 or higher JRE is required. The SDK includes native code, and therefore has system dependencies. PKWARE has confirmed that it works on the following platforms:
 
-- MacOS
-- Red Hat Enterprise Linux 6+ 64-bit
-- SUSE Linux Enterprise Server 11+
-- Ubuntu 16.04+ 64-bit
-- Windows 7 / Windows Server 2008 R2 64-bit
+- MacOS: Catalina (10.15), Big Sur (11)
+- Red Hat Enterprise Linux 8 64-bit
+- SUSE Linux Enterprise Server 12 64-bit
+- Ubuntu 18.04 LTS
+- Windows 8.1, 10 / Windows Server 2012, 2012 R2, 2016, 2019
 
 The SDK is likely to run on other 64-bit GNU-based linux systems with `libc` version `2.12` or higher.
 
